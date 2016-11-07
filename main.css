@@ -1,0 +1,25 @@
+.Main rect{
+	fill:grey;
+	stroke:black;
+	
+}
+
+.Main text{
+	fill:white;
+
+}
+.insightLink{
+	stroke:green;
+	fill:green;
+}
+.exampleLink{
+	stroke:black;
+}
+
+.form{
+	width:200px;
+}
+
+#add-form{
+	position: relative;
+}
