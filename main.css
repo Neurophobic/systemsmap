@@ -119,12 +119,13 @@
 
 }
 .example-card h4{
-	ont-family:'Roboto Slab',serif;
+	font-family:'Roboto Slab',serif;
+	margin-bottom:5px;
 }
 
 .insight-cat{
 	font-family:'Roboto Slab',serif;
-	padding:5px;
+	padding:1px;
 }
 
 .title-thing{

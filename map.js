@@ -388,11 +388,16 @@ var data = {
    },
     {
      name: "Starlab iArbol",
+     sub:"Urban Forest Management in Barcelona",
+     link:"starlab",
      type: "example",
      source:38,
      target:37,
      force:true,
-     desc:""
+     need:"To come up with effective ways to mitigate pollution - microclimate regulation",
+     insight:"Are there existing indicators that mitigate climate change/natural disasters, which allow you to tap in to readily available resources (natural or manmade)?",
+     resolved:"Created interactive visualisation of state of climate through showing health indicator of urban forest area",
+     desc:"Trees as pollution mitigation / microclimate regulation."
    },
    {
      name: "Insight",
@@ -403,12 +408,17 @@ var data = {
      desc:"Is there a way to identify actors that share a common goal - although having different processes to attain it - and build bridges between them? "
    },
    {
-     name: "GeoDesign (science & design)",
+     name: "GeoDesign",
+     sub:"Science & Design",
+     link:"geodesign",
      type: "example",
      source:40,
      target:39,
      force:true,
-     desc:""
+     need:"To support professionals in infrastructure/environmental decision making",
+     insight:"Is there a way to identify actors that share a common goal - although having different processes to attain it - and build bridges between them?",
+     resolved:"Combined GIS and design tech through data layering on top of a base map that creates a visual representation of what can be done and how it can influence the current surroundings",
+     desc:"Geodesign combines geography with design by providing designers with robust tools that support rapid evaluation of design alternatives against the impacts of those designs."
    },
    {
      name: "Insight",
@@ -420,11 +430,16 @@ var data = {
    },
    {
      name: "Data Cube",
+     sub:"Australian Geoscience",
+     link:"datacube",
      type: "example",
      source:42,
      target:41,
      force:true,
-     desc:""
+     need:"To provide a dataset of satellite imagery and analysis purely for australia to track changes over time and gain deeper understanding of current state of continent",
+     insight:"Is it possible to condense, combine and relate relevant data from various inputs?",
+     resolved:"Created a cube data platform that allows for analysis of the maps and  interactive experiences accessible to researchers and policy advisors.",
+     desc:"The prototype Data Cube makes available, for the first time, more than three decades of satellite imagery spanning Australia’s total land area at a resolution of 25 square metres. The 240,000+ images show how Australia’s vegetation, land use, water movements and urban expansion have changed over the past 30 years"
    },
    {
      name: "Insight",
@@ -436,11 +451,16 @@ var data = {
    },
    {
      name: "MapBox",
+     sub:"Utilizing satellites and drones",
+     link:"mapbox",
      type: "example",
      source:44,
      target:43,
      force:true,
-     desc:""
+     need:"How to create value added services specific to end user application for satellite imagery (& drones) to aid decision making within the realm of natural resources",
+     insight:"Can the extraction of the value added data from risk assessment related imagery become a constant goal for professionals and citizen users?",
+     resolved:"Created a platform simplifying usage of satellite imagery via tailoring and easy to understand data visualisations to help aid decision making and transparency between companies and their respective end users.",
+     desc:"Real-time data visualizations with imagery from drones and satellites used to monitor natural resources."
    },
 
    {
@@ -453,11 +473,16 @@ var data = {
    },
    {
      name: "GFDRR",
+     sub:"World Bank & Global Fac. For Disaster Reduction",
+     link:"gfdrr",
      type: "example",
      source:46,
      target:45,
      force:true,
-     desc:""
+     need:"Innovative disaster reduction.",
+     insight:"Are there resources that utilise open tools (e.g., OpenStreetMap) for community insight?",
+     resolved:"Combine OpenStreetMap and other crowdsourced data with EO in online platform.",
+     desc:"Community mapping with OSM. Open data. GeoNode, web - based open source platform that makes it easier to develop geospatial data."
    },
    {
      name: "Insight",
@@ -468,12 +493,17 @@ var data = {
      desc:"Can there be an interface/platform that includes community involvement with expert guidance while also using GIS?"
    },
    {
-     name: "Web-GIS flash flood Italy",
+     name: "Web-GIS Flash Flood",
      type: "example",
+     sub:"Italy",
+     link:"flashflood",
      source:48,
      target:47,
      force:true,
-     desc:""
+     need:"Include a variety of stakeholders in important risk mitigation decisions when faced with potential for, or consequences of disasters.",
+     insight:"Can there be an interface/platform that includes community involvement with expert guidance while also using GIS?",
+     resolved:"Created a web GIS based decision making platform facilitating communication between all stakeholders",
+     desc:"A web-GIS based participative decision support platform in the field of risk management, especially focusing on the phase of risk prevention and mitigation of the disaster risk management cycle."
    },
    {
      name: "Insight",
@@ -485,11 +515,12 @@ var data = {
    },
    {
      name: "BLiF",
+     sub:"Blickpunkt Fernerkundung, Point of View Remote Sensing",
      type: "example",
      source:50,
      target:49,
      force:true,
-     desc:""
+     desc:"BLIF allows students to independently work with original satellite images featuring a didactically prepared tool set of basic image analysis functions. Preprocessing steps like histogram stretching and image enhancement are included in every workflow. Further possible analysis steps comprise color composites, vegetation indices, supervised and unsupervised classification as well as change detection."
    },
 
    {
@@ -512,11 +543,16 @@ var data = {
    },
    {
      name: "Data61",
+     sub:"CSIRO",
+     link:"data61csiro",
      type: "example",
      source:53,
      target:52,
      force:true,
-     desc:""
+     need:"to address a variety of factors within disaster management via common framework",
+     insight:"Is having a common framework of modelling and planning by which everyone can refer back to necessary?",
+     resolved:"Algorithms, simulation and optimisation tools help account for all the potential issues faced during disasters ",
+     desc:"1) Power System Restoration. 2) Evac. Planning. 3) Human Dynamics."
    },
    {
      name: "Insight",
@@ -528,11 +564,16 @@ var data = {
    },
    {
      name: "University of Portsmouth",
+     sub:"Disaster risk reduction research group",
+     link:"uop",
      type: "example",
      source:55,
      target:54,
      force:true,
-     desc:""
+     need:": to better understand what can reduce risk throughout the disaster cycle to be more efficient in utilising resources but also saving lives",
+     insight:"Is a common ‘protocol’, specifically, organising and prioritising the various technologies throughout the disaster cycle, key?",
+     resolved:"Came up with remote sensing and mapping methodology that accounts for all stages of disaster cycle",
+     desc:"Resarch group striving to develop systems for the entire disaster cycle."
    },
     {
      name: "Insight",
@@ -544,11 +585,16 @@ var data = {
    },
    {
      name: "Spark",
+     sub:"CSIRO Data61",
+     link:"spark",
      type: "example",
      source:57,
      target:56,
      force:true,
-     desc:""
+     need:"To be able to predict fire behaviour",
+     insight:"Can we give users the ability to create custom simulations of events (fire, flood, etc)?",
+     resolved:"Utilised previous knowledge of bush fire behaviour and created calculation to predict movement of future ones ",
+     desc:"A toolkit for the end-to-end processing, simulation and analysis of wildfires. Users can design custom fire propagation models by building on Spark’s computational fire propagation solver and incorporating various input, processing and visualisation components, each tailored for wildfire modelling. Spark can be used for many applications including planning, warning and response, and research."
    },
     {
      name: "Insight",
@@ -560,11 +606,16 @@ var data = {
    },
    {
      name: "Melodies",
+     sub:"Exploiting Open Data",
+     link:"melodies",
      type: "example",
      source:59,
      target:58,
      force:true,
-     desc:""
+     need:"Visualise spatial data.",
+     insight:"Is there a need for an aggregator of data and insights that standardises methods of reporting and interactions with open data, to in turn aid decision makers?",
+     resolved:"Data structure built on common data standard.",
+     desc:"Coverage is a data structure that maps points in space and time to values. Melodies are working on a new Coverage standard data structure that is based on JSON, supports continuous(changing over time) and categorical(absolute classification) data types."
    },
     {
      name: "Insight",
@@ -576,11 +627,16 @@ var data = {
    },
    {
      name: "Humanitarian OpenStreetMap",
+     sub:"HOTOSM",
+     link:"HOTOSM",
      type: "example",
      source:61,
      target:60,
      force:true,
-     desc:""
+     need:"When disaster strikes - a common up to date database of the surroundings is necessary for safety and rescue.",
+     insight:"Is there an inclusive approach for all stakeholders within disaster mapping, that helps unlock detailed and valuable maps from a variety of data sources?",
+     resolved:"Created an open map where volunteers can add data to achieving a full picture.",
+     desc:"Crowdsourcing digital mapping for disaster areas from satellite imagery - 'Free, up-to-date maps are a critical resource when relief organizations are responding to disasters or political crises. The Humanitarian OpenStreetMap Team (HOT) creates and provides those maps.'"
    },
     {
      name: "Insight",
@@ -592,27 +648,39 @@ var data = {
    },
    {
      name: "MicroMappers",
+     sub:"Tweet mining disaster response",
+     link:"micromappers",
      type: "example",
      source:63,
      target:62,
      force:true,
-     desc:""
+     need:"Combine a variety of data types to create an overall understanding of current scenario.",
+     insight:"Does human computing help combine data types to then speed up and ameliorate machine learning?",
+     resolved:"Combine crowdsourcing and AI to filter and map all the different data sets to create an up to date map ",
+     desc:"Combine human computing (smart crowd-sourcing) with machine computing (artificial intelligence) to filter, fuse and map a variety of different data types such as text, photo, video and satellite/aerial imagery. To do this, we have created a collection of “Clickers” for MicroMappers. Clickers are simply web-based crowdsourcing apps used to make sense of “Big Data”. The “Text Cicker” is used to filter tweets & SMS’s; “Photo Clicker” to filter photos; “Video Clicker” to filter videos and yes the Satellite & Aerial Clickers to filter both satellite and aerial imagery. These are the Data Clickers. We also have a collection of Geo Clickers that digital volunteers use to geo-tag tweets, photos and videos filtered by the Data Clickers."
    },
     {
      name: "Insight",
+     
      type: "insight",
      source:64,
      target:4,
      force:true,
+    
      desc:"Is there a need for user-generated data that is deemed trustworthy to then correctly act upon the information given?"
    },
    {
      name: "Energic",
      type: "example",
+     sub:"European Network Exploring Research into Geospatial Information Crowdsourcing",
+     link:"energic",
      source:65,
      target:64,
      force:true,
-     desc:""
+      need:"Use user-generated geographical information.",
+     insight:"Is there a need for user-generated data that is deemed trustworthy to then correctly act upon the information given?",
+     resolved:"Organize research network.",
+     desc:"Research network looking at user-generated volunteered geographical information (VGI)."
    },
    {
      name: "Insight",
@@ -624,11 +692,16 @@ var data = {
    },
    {
      name: "Heal App",
+     sub:"",
+     link:"healapp",
      type: "example",
      source:67,
      target:66,
      force:true,
-     desc:""
+     need:"Creating an Ai assisted hierarchy based medical response app allows the process of helping survivors more effective.",
+     insight:"Is machine learning a ‘go-to’ method when wanting to reduce the cognitive load for decision makers in crucial moments?",
+     resolved:"Entering symptoms and injuries helps the app triangulated illness severity, location and current medical supply data to create a medical task sheet and inform agencies of what the needs of the injured are.",
+     desc:"Heal app is the Uber for mobile doctor appointments in LA, This infrastructure could be combined with DR map information."
    },
    {
      name: "Insight",
@@ -640,11 +713,16 @@ var data = {
    },
    {
      name: "Lux",
+     sub:"ICG Solutions",
+     link:"lux",
      type: "example",
      source:69,
      target:68,
      force:true,
-     desc:""
+     need:"Storing and insight of data.",
+     insight:"Are there ways of finding solutions in real time data via utilising natural language?",
+     resolved:"Build software platform.",
+     desc:"A series of dashboards that assimilate lots of data from various inputs. Allows users to ask questions about all the different streams of data and produces interesting insight from it. Fuses and correlates info in real time"
    },
    {
      name: "Insight",
@@ -656,11 +734,16 @@ var data = {
    },
    {
      name: "AIDR",
+     sub:"AI for disaster response",
+     link:"aidr",
      type: "example",
      source:71,
      target:70,
      force:true,
-     desc:""
+     need:"Better organise all the data that is generated during a disaster.",
+     insight:"Can AI reduce search and time costs via analysing incoming texts and images for crisis alerts?",
+     resolved:"Assign people as collector, trainer or tagger - machine learns from this and allows for classification of data during disaster leading to better understanding and response on behalf of community and emergency services.",
+     desc:"Platform designed to perform automatic classification of crisis-related microblog communications. AIDR enables humans and machines to work together to apply human intelligence to large-scale data at high speed. (Collector - Trainer - Tagger). The objective of AIDR is to classify messages that people post during disasters into a set of user-defined categories of information"
    },
    {
      name: "Insight",
@@ -672,11 +755,16 @@ var data = {
    },
    {
      name: "HawkEye360",
+     sub:"LEO Constellation",
+     link:"hawkeye",
      type: "example",
      source:73,
      target:72,
      force:true,
-     desc:""
+     need:"Prevent spoofing, improve location check.",
+     insight:"How can location checking and its cross validation be improved, to act accordingly and with certainty in critical moments?",
+     resolved:"Provide ability to cross check geolocation data.",
+     desc:"Worldwide coverage (allowing for 30+ revisits a day). 18 satellites in total. It detects any radio frequency signals - can therefore aid search & rescue – land or sea through geolocation signals."
    },
    {
      name: "Insight",
@@ -688,11 +776,16 @@ var data = {
    },
    {
      name: "One Concern",
+     sub:"Emergency Management using AI",
+     link:"oneconcern",
      type: "example",
      source:75,
      target:74,
      force:true,
-     desc:""
+     need:"Post disaster protocols lacking in effeciency.",
+     insight:"Can AI support the co-ordination of efforts post disaster for effective response?",
+     resolved:"Built dynamic protocol for post disaster, including multiple stakeholders.",
+     desc:"Local fire departments, police departments, EMTs, and volunteers are the frontline experts within their communities. One Concern, Inc. respects that and can receive input well in advance of a disaster from these sources. Our algorithm can be trained to understand what is important to local communities."
    },
    {
      name: "Insight",
@@ -704,11 +797,16 @@ var data = {
    },
    {
      name: "EWN",
+     sub:"Early Warning Network Australia",
+     link:"EWN",
      type: "example",
      source:77,
      target:76,
      force:true,
-     desc:""
+     need:"Promote disaster response and safety.",
+     insight:"Are there user-initiated actions that can address their specific emergency situation, such as having a choice of what service they need and which they choose to act on?",
+     resolved:"Alert sent to you based on selected location. Using GIS.",
+     desc:"Location Based Warning System - register area of interest through GIS polygon- you receive info via SMS; E-mail; Landline."
    },
     {
      name: "Insight",
@@ -718,13 +816,20 @@ var data = {
      force:true,
      desc:"Is there access to niche and value added satellite data? "
    },
+
+ 
    {
      name: "Digital Globe",
      type: "example",
+     sub:"High-res Satellite Imagery GBDX Platform",
+     link:"dg1",
      source:79,
      target:78,
      force:true,
-     desc:""
+     insight:"Is there access to niche and value added satellite data?",
+     need:"Data for insight",
+      resolved:"Platform for accessing data and algorithms using AWS",
+     desc:"Application of computer vision and deep learning to extract information from satellite imagery at scale. Release data set to the public to enable developers and data scientists. Map features such as roads, building footprints, and points of interest are created through manual or semi-automated techniques. Solving this challenge will enable more advanced use cases for GPU accelerated AI: such as change detection, wide area search, automated tipping, as well as downstream uses of map data including autonomous vehicles."
    },
      {
      name: "Insight",
@@ -736,11 +841,16 @@ var data = {
    },
    {
      name: "Earth-i",
+     sub:"High-res Satellite Imagery GBDX Platform",
+     link:"earthi",
      type: "example",
      source:81,
      target:80,
      force:true,
-     desc:""
+     need:"Data for insight",
+     insight:"Is niche satellite data given to the right influential decision makers?",
+     resolved:"Platform for accessing data and algorithms using AWS",
+     desc:"Among other things - can automatically identify rooftop material of buildings as it has 16 bands"
    },
    {
      name: "Insight",
@@ -752,11 +862,16 @@ var data = {
    },
    {
      name: "BlackSky",
+     sub:"AlertWhere",
+     link:"blacksky",
      type: "example",
      source:83,
      target:82,
      force:true,
-     desc:""
+     need:"Round the clock EO monitoring.",
+     resolved:"Fuze imagery and social media content with various data inputs.",
+     insight:"Is there a way to ensure data is always valid and reliable with a 24/7 coverage of the various inputs?",
+     desc:"Global event monitoring on an hourly basis. Use social media & newsfeeds to look at anomalies and puts these on a heat map."
    },
    {
      name: "Insight",
