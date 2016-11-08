@@ -290,7 +290,7 @@ var data = {
      sub:"",
      type: "",
      source:28,
-     target:26,
+     target:28,
      force:true,
      desc:""
    },
