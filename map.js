@@ -6,6 +6,8 @@ var data = {
    nodes: [
    {
      name: "Mission Control",
+     title:"Mission <br> Control",
+     subtitle:"",
      x: windowW/2,
      y: 100,
      type: "Main",
@@ -13,6 +15,8 @@ var data = {
    }, 
    {
      name: "Prediction",
+     title: "Prediction",
+     subtitle:"",
      x: windowW/6 - ((windowW/6)/2),
      y: 400,
      type: "Main",
@@ -20,6 +24,8 @@ var data = {
    }, 
    {
      name: "Auditing",
+     title:"Auditing",
+     subtitle:"",
      x: windowW/6 - ((windowW/6)/2),
      y: 800,
      type: "Main",
@@ -27,6 +33,8 @@ var data = {
    },
    {
      name: "Learning",
+     title: "Learning",
+     subtitle:"",
      x: (windowW/6)*3 - ((windowW/6)/2),
      y: 400,
      type: "Main",
@@ -34,6 +42,8 @@ var data = {
    },
    {
      name: "Mapping",
+     title: "Mapping",
+     subtitle:"Citizen Mapping",
      x: (windowW/6)*3 - ((windowW/6)/2),
      y: 800,
      type: "Main",
@@ -41,6 +51,8 @@ var data = {
    },
    {
      name: "Planning",
+     title: "Planning",
+     subtitle:"Citizen Planning",
      x: (windowW/6)*4 - ((windowW/6)/2),
      y: 600,
      type: "Main",
@@ -48,6 +60,8 @@ var data = {
    },
    {
      name: "Design for Fog",
+     title: "Design for Fog",
+     subtitle:"Human Factors",
      x: (windowW/6)*5 - ((windowW/6)/2),
      y: 600,
      type: "Main",
@@ -55,6 +69,8 @@ var data = {
    },
    {
      name: "Aftermath",
+     title:"Aftermath",
+     subtitle:"Rebuild & Recover",
      x: (windowW/6)*6 - ((windowW/6)/2),
      y: 600,
      type: "Main",
@@ -408,6 +424,8 @@ var data = {
 
    {
      name: "Modeling",
+     title: "Modeling",
+     subtitle:"",
      x: (windowW/6)*2 - ((windowW/6)/2),
      y: 600,
      type: "Main",
@@ -853,14 +871,7 @@ var mainNodeW = 150;
 var mainNodeH = 50;
 
 
- var mainNodes = svg.selectAll("mainNodes")
- 	.data(data.nodes.filter(function(d){
- 		return d.type == "Main";
- 	}))
- 	.enter().append("g")
- 	.attr('class', function(d){
- 			return d.type;
- 		});
+
 
 
 
@@ -947,30 +958,7 @@ var insightNodes = svg.selectAll("insightNodes")
  	.attr("r", 10);
 
 
-  mainNodes.append("rect")
-    .attr('class', function(d){
-      return d.type;
-    })
-    .attr("x", function(d){
-      return d.x - mainNodeW/2;
-    })
-    .attr("y", function(d){
-      return d.y - mainNodeH/2;
-    })
-    .attr("height", mainNodeH)
-    .attr("width", mainNodeW);
 
-mainNodes.append("text")
-
-    .attr("x", function(d){
-      return d.x - mainNodeW/2;
-    })
-    .attr("y", function(d){
-      return d.y ;
-    })
-    .text(function(d){
-      return d.name;
-    });
 
 
 
@@ -1004,8 +992,69 @@ mainNodes.append("text")
 
   }
 
+ var mainNodes = svg.selectAll("mainNodes")
+  .data(data.nodes.filter(function(d){
+    return d.type == "Main";
+  }))
+  .enter().append("g")
+  .attr('class', function(d){
+      return d.type;
+    });
+  mainNodes.append("circle")
+    .attr('class', function(d){
+      return d.type;
+    })
+    .attr("cx", function(d){
+      return d.x ;
+    })
+    .attr("cy", function(d){
+      return d.y ;
+    })
+    .attr("r", 77);
 
+// mainNodes.append("text")
+//     .attr({
+//       "text-anchor": "middle"})
 
+//     .attr("x", function(d){
+//       return d.x;
+//     })
+//     .attr("y", function(d){
+//       return d.y + 5 ;
+//     })
+//     .text(function(d){
+//       return d.title;
+//     });
+
+ var mainTextBox = mainNodes.append('foreignObject')
+                    .attr("x", function(d){
+                       return d.x - 45;
+                    })
+                    .attr("y", function(d){
+                       return d.y -45 ;
+                      })
+                    .attr('width', 90)
+                    .attr('height', 90)
+                    .append("xhtml")
+                    .html(function(d){
+                      var thing = '<div class="main-text-box" style="width: 90px; height:90px;"><h2>'+d.title+'</h2></div>';
+                      return thing;
+                    });
+
+   var subTextBox = mainNodes.append('foreignObject')
+                    .attr("x", function(d){
+                       return d.x - 45;
+                    })
+                    .attr("y", function(d){
+                       return d.y -10;
+                      })
+                    .attr('width', 90)
+                    .attr('height', 45)
+                    .append("xhtml")
+                    .html(function(d){
+                      var thing = '<div class="main-sub-box" style="width: 90px; height:90px;"><p>'+d.subtitle+'</p></div>';
+                      return thing;
+                    });                  
 
     
 

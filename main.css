@@ -4,8 +4,17 @@
 	
 }
 
+.Main circle{
+	fill:#101717;
+}
+
 .Main text{
+	font-family: 'Roboto Slab', serif;
 	fill:white;
+	text-transform: uppercase;
+	font-size:12px;
+	font-weight: 700;
+	letter-spacing: 2px;
 
 }
 .insightLink{
@@ -33,8 +42,42 @@
 }
 
 .insight-text-box{
+
 	background-color:white;
 	border:solid 1px black;
 	font-size:7px;
 	text-align: center;
+}
+
+.main-text-box{
+	display:flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+	color:white;
+	font-family: 'Roboto Slab', serif;
+	fill:white;
+	text-transform: uppercase;
+	font-size:16px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+.main-text-box h2{
+	font-size:16px;
+}
+
+.main-sub-box{
+		display:flex;
+    align-items: center; /* Vertical center alignment */
+ 
+	color:white;
+	font-family: 'Roboto Slab', serif;
+	fill:white;
+	text-transform: uppercase;
+	font-size:8px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-align: center;
+	
 }
