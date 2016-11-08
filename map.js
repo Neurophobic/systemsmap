@@ -286,7 +286,9 @@ var data = {
    },
    {
      name: "Crowd4Sat",
-     type: "example",
+     link:"crowdsat",
+     sub:"",
+     type: "",
      source:28,
      target:26,
      force:true,
@@ -302,11 +304,16 @@ var data = {
    },
    {
      name: "Digital Globe",
+     sub:"High-res Satellite Imagery GBDX Platform",
+     link:"dg",
      type: "example",
      source:30,
      target:29,
      force:true,
-     desc:""
+     need:"Data for insight",
+     insight:"Does providing a platform for any user that holds a combination of EO data with intelligence and aggregated hosting support the learning phase of resilience to disasters?",
+     resolved:"Platform for accessing data and algorithms using AWS",
+     desc:"Application of computer vision and deep learning to extract information from satellite imagery at scale. Release data set to the public to enable developers and data scientists. Map features such as roads, building footprints, and points of interest are created through manual or semi-automated techniques. Solving this challenge will enable more advanced use cases for GPU accelerated AI: such as change detection, wide area search, automated tipping, as well as downstream uses of map data including autonomous vehicles."
    },
    {
      name: "Insight",
@@ -319,18 +326,28 @@ var data = {
    {
      name: "UCL (IRDR)",
      type: "example",
+     sub:"Institute for risk & disaster reduction",
+     link:"ucl",
      source:32,
      target:31,
      force:true,
-     desc:""
+     need:"Better understand risk and disasters.",
+     insight:"Can we learn from organisations that research disaster reduction and provide funding for innovation within the field to also raise general public awareness?",
+     resolved:"Created institute dedicated to this end.",
+     desc:"UCL Mullard Space Science Laboratory, the Schmidt Institute of Physics of the Earth, Russian Academy of Sciences and the IRDR to developed an instrumentation-based project for the detection of natural disaster precursors from space through the observation of their effects in the ionosphere and magnetosphere"
    },
    {
      name: "NERC",
+     sub:"UK",
+     link:"nerc",
      type: "example",
      source:33,
      target:31,
      force:true,
-     desc:""
+     need:"To promote and support high-quality basic, strategic and applied research, support training in environmental and related sciences, generate public awareness and disseminate research findings in the field of environmental sciences & management.",
+     insight:"Can we learn from organisations that research disaster reduction and provide funding for innovation within the field to also raise general public awareness?",
+     resolved:"Created a council that does the above.",
+     desc:"The Natural Environment Research Council is the UK's largest funder of independent environmental science, training and innovation, delivered through universities and research centres."
    },
     {
      name: "Insight",
@@ -343,10 +360,14 @@ var data = {
    {
      name: "Terrapattern",
      type: "example",
+     sub:"Mapping and Machine Vision",
      source:35,
      target:34,
      force:true,
-     desc:""
+     need:"Locate similar points on the map",
+     insight:"Can machine learning increase the scaling and coverage of imagery processing to substitute current search costs?",
+     resolved:"Build an interactive web platform",
+     desc:"A prototype for exploring the unmapped, and the unmappable, using machine vision."
    },
    {
      name: "Insight",
@@ -1402,7 +1423,7 @@ var data = {
    var svg = body
    .append("svg")
    .attr("width", windowW)
-   .attr("height", windowH-50)
+   .attr("height", windowH-100)
 
     .call(d3.behavior.zoom().on("zoom", function () {
     svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
@@ -1421,11 +1442,44 @@ console.log("updating");
 
 var timeline = svg.append("line")
                         .attr("x1",0-(windowW/6))
-                          .attr("y1", windowH-5)
+                          .attr("y1", windowH+300)
                         .attr("x2", windowW+(windowW/6))
-                         .attr("y2", windowH-5)
+                         .attr("y2", windowH+300)
                          .attr('fill', '#101717')
-            .attr('stroke','#101717');;
+            .attr('stroke','#101717');
+
+            var practical = svg.append("text")
+              .text("Practical Preventive")
+              .attr("x", 0-((windowW/6)) + ((windowW/6)*2))
+            .attr("y", windowH+300);
+
+            var identified = svg.append("text")
+              .text("Identified Vulnerabilities")
+              .attr("x", 0-(windowW/6))
+            .attr("y", windowH+300);
+
+            var connected = svg.append("text")
+              .text("Connected Communities")
+              .attr("x", 0-((windowW/6)) + ((windowW/6)*3))
+            .attr("y", windowH+300);
+
+             var early = svg.append("text")
+              .text("Early Warning Systems")
+              .attr("x", 0-((windowW/6)) + ((windowW/6)*4))
+            .attr("y", windowH+300);
+
+            var emergency = svg.append("text")
+              .text("Emergency Response Plan")
+              .attr("x", 0-((windowW/6)) + ((windowW/6)*5))
+            .attr("y", windowH+300);
+
+            var rebuild = svg.append("text")
+              .text("Rebuild & Recover")
+              .attr("x", 0-((windowW/6)) + ((windowW/6)*6))
+            .attr("y", windowH+300);
+
+
+
 
    svg.append('defs').append('marker')
         .attr({'id':'arrowhead',
@@ -1511,7 +1565,7 @@ var mainNodeH = 50;
           if(d.type == "insight"){
             return 100;
           } else {
-            return 25;
+            return 5;
           }
         })
       .start();
@@ -1598,10 +1652,32 @@ var howmightwe = insightNodes.append('foreignObject')
  	.enter().append("g")
  		.attr("class", "exampleNode");
 
+
+
  exampleNodes.append("circle")
  	.attr("cx",0)
  	.attr("cy",0)
- 	.attr("r", 10);
+ 	.attr("r", 15)
+  .on("click", function(d){
+    console.log(d.name);
+    var link = "#"+d.link;
+    $(document.body).animate({
+    'scrollTop':   $(link).offset().top
+}, 2000);
+  })
+.on("mouseover", function(d) {
+  d3.select(this).attr("r", 16).style("fill", "grey");
+}) 
+.on("mouseout", function(d) {
+  d3.select(this).attr("r", 15).style("fill", "black");
+}) 
+  ;
+
+  exampleNodes.append("text")
+    .text(function(d){
+      return d.name;
+    })
+    .style("font-size","5px");
 
 
 
@@ -1707,7 +1783,7 @@ var howmightwe = insightNodes.append('foreignObject')
 $( document ).ready(function() {
   for(var i = 0; i< data.nodes.length; i++){
     if(data.nodes[i].type == "example"){
-      $("#foo").append("<div class='example-card'><h1>"+data.nodes[i].name+"<h2><p>"+data.nodes[i].desc+"<p></div>");
+      $("#foo").append("<div class='pure-g'><div class='pure-u-1-3 '></div><div class='pure-u-1-3 example-card'><a id='"+data.nodes[i].link+"' name='"+data.nodes[i].link+"'><h1>"+data.nodes[i].name+"</h1></a><h2>"+data.nodes[i].sub+"</h2><p>"+data.nodes[i].desc+"<p><div class='pure-g'><div class='pure-u-1-3 '><div class='insight-cat'><h4>Need being answered:</h4> "+data.nodes[i].need+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>Insight:</h4>"+data.nodes[i].insight+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>How Resolved:</h4>  "+data.nodes[i].resolved+"</div></div></div></div></div>");
     }
     
   }

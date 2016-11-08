@@ -92,3 +92,48 @@
 	text-align: center;
 
 }
+#foo{
+	border-top:1px solid rgba(0,0,0,0.1);
+	width:100%;
+	
+}
+.example-card{
+	border-bottom:1px solid grey;
+	padding-bottom:25px;
+	margin-bottom:20px;
+}
+.example-card h1{
+	font-family: 'Roboto Slab', serif;
+}
+.example-card h2{
+	font-family: 'Roboto Slab', serif;
+	font-size:0.8em;
+	margin-top:-15px;
+}
+
+.example-card p{
+	font-family:'Roboto Slab',serif;
+}
+
+.card-holder{
+
+}
+.example-card h4{
+	ont-family:'Roboto Slab',serif;
+}
+
+.insight-cat{
+	font-family:'Roboto Slab',serif;
+	padding:5px;
+}
+
+.title-thing{
+	margin-top:10px;
+	/*text-align: center;*/
+	font-weight: 400;
+	font-family:'Roboto Slab',serif !important;
+	font-size:2.3em;
+	letter-spacing: 2px;
+	
+}
+
