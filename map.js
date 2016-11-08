@@ -8,7 +8,7 @@ var data = {
      name: "Mission Control",
      title:"Mission Control",
      subtitle:"",
-     x: windowW/2,
+     x: (windowW*1.5)/2,
      y: 100,
      type: "Main",
      fixed: true
@@ -17,7 +17,7 @@ var data = {
      name: "Prediction",
      title: "Prediction",
      subtitle:"",
-     x: windowW/6 - ((windowW/6)/2),
+     x: (windowW*1.5)/6 - (((windowW*1.5)/6)/2),
      y: 400,
      type: "Main",
      fixed: true
@@ -26,7 +26,7 @@ var data = {
      name: "Auditing",
      title:"Auditing",
      subtitle:"",
-     x: windowW/6 - ((windowW/6)/2),
+     x: (windowW*1.5)/6 - (((windowW*1.5)/6)/2),
      y: 800,
      type: "Main",
      fixed: true
@@ -35,7 +35,7 @@ var data = {
      name: "Learning",
      title: "Learning",
      subtitle:"",
-     x: (windowW/6)*3 - ((windowW/6)/2),
+     x: ((windowW*1.5)/6)*3 - (((windowW*1.5)/6)/2),
      y: 400,
      type: "Main",
      fixed: true
@@ -44,7 +44,7 @@ var data = {
      name: "Mapping",
      title: "Mapping",
      subtitle:"Citizen Mapping",
-     x: (windowW/6)*3 - ((windowW/6)/2),
+     x: ((windowW*1.5)/6)*3 - (((windowW*1.5)/6)/2),
      y: 800,
      type: "Main",
      fixed: true
@@ -53,7 +53,7 @@ var data = {
      name: "Planning",
      title: "Planning",
      subtitle:"Citizen Planning",
-     x: (windowW/6)*4 - ((windowW/6)/2),
+     x: ((windowW*1.5)/6)*4 - (((windowW*1.5)/6)/2),
      y: 600,
      type: "Main",
      fixed: true
@@ -62,7 +62,7 @@ var data = {
      name: "Design for Fog",
      title: "Situational Awareness",
      subtitle:"Human Factors",
-     x: (windowW/6)*5 - ((windowW/6)/2),
+     x: ((windowW*1.5)/6)*5 - (((windowW*1.5)/6)/2),
      y: 600,
      type: "Main",
      fixed: true
@@ -71,7 +71,7 @@ var data = {
      name: "Aftermath",
      title:"Aftermath",
      subtitle:"Rebuild & Recover",
-     x: (windowW/6)*6 - ((windowW/6)/2),
+     x: ((windowW*1.5)/6)*6 - (((windowW*1.5)/6)/2),
      y: 600,
      type: "Main",
      fixed: true
@@ -426,7 +426,7 @@ var data = {
      name: "Modelling",
      title: "Modelling",
      subtitle:"",
-     x: (windowW/6)*2 - ((windowW/6)/2),
+     x: ((windowW*1.5)/6)*2 - (((windowW*1.5)/6)/2),
      y: 600,
      type: "Main",
      fixed: true
