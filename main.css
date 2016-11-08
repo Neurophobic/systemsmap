@@ -50,6 +50,15 @@
 	text-align: center;
 	padding:10px;
 }
+.insight-how-might-we{
+	color:white;
+	font-family: 'Roboto Slab', serif;
+	background-color:black;
+	border:solid 1px black;
+	font-size:7px;
+	padding:10px;
+
+}
 
 .main-text-box{
 	display:flex;

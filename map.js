@@ -8,7 +8,7 @@ var data = {
      name: "Mission Control",
      title:"Mission Control",
      subtitle:"",
-     x: (windowW*1.5)/2,
+     x: (windowW)/2,
      y: 100,
      type: "Main",
      fixed: true
@@ -17,7 +17,7 @@ var data = {
      name: "Prediction",
      title: "Prediction",
      subtitle:"",
-     x: (windowW*1.5)/6 - (((windowW*1.5)/6)/2),
+     x: (windowW)/6 - (((windowW)/6)),
      y: 400,
      type: "Main",
      fixed: true
@@ -26,7 +26,7 @@ var data = {
      name: "Auditing",
      title:"Auditing",
      subtitle:"",
-     x: (windowW*1.5)/6 - (((windowW*1.5)/6)/2),
+     x: (windowW)/6 - (((windowW)/6)),
      y: 800,
      type: "Main",
      fixed: true
@@ -35,7 +35,7 @@ var data = {
      name: "Learning",
      title: "Learning",
      subtitle:"",
-     x: ((windowW*1.5)/6)*3 - (((windowW*1.5)/6)/2),
+     x: ((windowW)/6)*3 - (((windowW)/6)/2),
      y: 400,
      type: "Main",
      fixed: true
@@ -44,7 +44,7 @@ var data = {
      name: "Mapping",
      title: "Mapping",
      subtitle:"Citizen Mapping",
-     x: ((windowW*1.5)/6)*3 - (((windowW*1.5)/6)/2),
+     x: ((windowW)/6)*3 - (((windowW)/6)/2),
      y: 800,
      type: "Main",
      fixed: true
@@ -53,7 +53,7 @@ var data = {
      name: "Planning",
      title: "Planning",
      subtitle:"Citizen Planning",
-     x: ((windowW*1.5)/6)*4 - (((windowW*1.5)/6)/2),
+     x: ((windowW)/6)*4 + (((windowW)/6)/2),
      y: 600,
      type: "Main",
      fixed: true
@@ -62,16 +62,16 @@ var data = {
      name: "Design for Fog",
      title: "Situational Awareness",
      subtitle:"Human Factors",
-     x: ((windowW*1.5)/6)*5 - (((windowW*1.5)/6)/2),
+     x: ((windowW)/6)*5 + (((windowW)/6)/2),
      y: 600,
      type: "Main",
      fixed: true
    },
    {
      name: "Aftermath",
-     title:"Aftermath",
-     subtitle:"Rebuild & Recover",
-     x: ((windowW*1.5)/6)*6 - (((windowW*1.5)/6)/2),
+     title:"Rebuild & Recover",
+    subtitle:"",
+     x: ((windowW)/6)*6 + (((windowW)/6)/2),
      y: 600,
      type: "Main",
      fixed: true
@@ -82,7 +82,7 @@ var data = {
      source:8,
      target:1,
      force:true,
-     desc:"Utilisation of predictive software for disasters to manage scenarios better."
+     desc:"Can predictive software help manage disaster scenarios better?"
    },
    {
      name: "Amicus",
@@ -98,7 +98,7 @@ var data = {
      source:10,
      target:2,
      force:true,
-     desc:"Enable the logging, reporting, and measurement of declining/damaged buildings, or general “health state” of the community, with participation of community."
+     desc:"Is there a community centred approach to logging, reporting, and measuring declining/damaged buildings, or the general “health state” of a community?"
    },
    {
      name: "BlightSTAT",
@@ -114,7 +114,7 @@ var data = {
      source:12,
      target:2,
      force:true,
-     desc:"Enable an “Opt – In” community vulnerability analysis; which would allow for a tailored and inclusive exploration of overall vulnerability (not only to assets), and level of resilience as a consequence "
+     desc:"Is there an “Opt – In” community vulnerability analysis; which would allow for a tailored and inclusive exploration of overall vulnerability (not only to assets), and level of resilience as a consequence?"
    },
    {
      name: "PVA",
@@ -130,7 +130,7 @@ var data = {
      source:14,
      target:2,
      force:true,
-     desc:"Community becoming more engaged with the auditing of assets will create a more holistic process leading up to the final decisions made"
+     desc:"Can a community become more engaged with the auditing of assets, therefore creating a more holistic process leading up to the final decisions made?"
    },
    {
      name: "NSW Rural Fire Service",
@@ -146,7 +146,7 @@ var data = {
      source:16,
      target:2,
      force:true,
-     desc:"Volunteers need to be motivated to help or take part (not only in the auditing phase, but also throughout disaster cycle) "
+     desc:"Can future volunteers be motivated to help or take part (not only in the auditing phase) in the whole disaster cycle?"
    },
    {
      name: "SES",
@@ -162,7 +162,7 @@ var data = {
      source:18,
      target:2,
      force:true,
-     desc:"Facilitate participation from community in to the auditing phase by increasing understanding of their specific risk and needs through address level analysis"
+     desc:"Is there a method of facilitating participation from the community in to the auditing phase by increasing understanding of their specific risk and needs through address level analysis?"
    },
    {
      name: "IAG Floods",
@@ -175,10 +175,11 @@ var data = {
    {
      name: "Insight",
      type: "insight",
+     howmight:true,
      source:20,
      target:2,
      force:true,
-     desc:"Open up existing “Catastrophe Network” services that measure risk exposure, assessment and resilience to the general public "
+     desc:"Open up existing “Catastrophe Network” services that measure risk exposure, assessment and resilience to the general public?"
    },
    {
      name: "Swiss Re CatNet",
@@ -207,18 +208,20 @@ var data = {
    {
      name: "Insight",
      type: "insight",
+     howmight:true,
      source:24,
      target:3,
      force:true,
-     desc:"The involvement of academia and policy makers to create a 360 degree platform of learning and planning"
+     desc:"involve academia and policy makers to create a 360 degree platform of learning and planning?"
    },
   {
      name: "Insight",
      type: "insight",
+     howmight:true,
      source:25,
      target:3,
      force:true,
-     desc:"Post-Hoc learning and sharing of disaster events and occurrences needs to be process that is constantly revisited "
+     desc:"create a process that constantly revisits post-hoc learning and the sharing of disaster-specific experiences?"
    },
    {
      name: "Insight",
@@ -226,7 +229,7 @@ var data = {
      source:26,
      target:3,
      force:true,
-     desc:"Current data gathering methods need to be better understood to improve them and utilise them in the best possible way"
+     desc:"Are current data gathering methods properly understood, to in turn improve and utilise them in the best possible way?"
    },
    {
      name: "European handbook of crowdsourcing",
@@ -250,7 +253,7 @@ var data = {
      source:29,
      target:3,
      force:true,
-     desc:"Providing a platform that holds a combination of EO data with intelligence and aggregated hosting will support the learning phase of resilience to disasters, for any user "
+     desc:"Does providing a platform for any user that holds a combination of EO data with intelligence and aggregated hosting support the learning phase of resilience to disasters?"
    },
    {
      name: "Digital Globe",
@@ -266,7 +269,7 @@ var data = {
      source:31,
      target:3,
      force:true,
-     desc:"Learning from organisations that research disaster reduction and provide funding for innovation within the field to also raise general public awareness is key"
+     desc:"Can we learn from organisations that research disaster reduction and provide funding for innovation within the field to also raise general public awareness?"
    },
    {
      name: "UCL (IRDR)",
@@ -290,7 +293,7 @@ var data = {
      source:34,
      target:4,
      force:true,
-     desc:"Utilisation of machine learning for the increase in scaling and coverage can aid previous search costs"
+     desc:"Can machine learning increase the scaling and coverage of imagery processing to substitute current search costs?"
    },
    {
      name: "Terrapattern",
@@ -303,10 +306,11 @@ var data = {
    {
      name: "Insight",
      type: "insight",
+     howmight:true,
      source:36,
      target:4,
      force:true,
-     desc:"There’s value locked in 3D geospatial intelligence for disaster reduction"
+     desc:"unlock the value and potential in 3D geospatial intelligence for disaster reduction?"
    },
    {
      name: "Insight",
@@ -314,7 +318,7 @@ var data = {
      source:37,
      target:4,
      force:true,
-     desc:"Discovering EXISTING indicators to mitigate climate change/natural disasters allowing you to tap in to readily available resources (natural or mandmade)"
+     desc:"Are there existing indicators that mitigate climate change/natural disasters, which allow you to tap in to readily available resources (natural or manmade)?"
    },
     {
      name: "Starlab iArbol",
@@ -330,7 +334,7 @@ var data = {
      source:39,
      target:4,
      force:true,
-     desc:"Identifying actors that share a common goal although having different processes to attain it, and building bridges between them"
+     desc:"Is there a way to identify actors that share a common goal - although having different processes to attain it - and build bridges between them? "
    },
    {
      name: "GeoDesign (science & design)",
@@ -346,7 +350,7 @@ var data = {
      source:41,
      target:4,
      force:true,
-     desc:"Condensing, combining and relating relevant data from various inputs "
+     desc:"Is it possible to condense, combine and relate relevant data from various inputs?"
    },
    {
      name: "Data Cube",
@@ -362,7 +366,7 @@ var data = {
      source:43,
      target:4,
      force:true,
-     desc:"A constant goal for professionals and citizen users needs to be the extraction of the value added data from risk assessment related imagery"
+     desc:"Can the extraction of the value added data from risk assessment related imagery become a constant goal for professionals and citizen users?"
    },
    {
      name: "MapBox",
@@ -379,7 +383,7 @@ var data = {
      source:45,
      target:5,
      force:true,
-     desc:"There is a need for resources that utilise open tools (e.g., OpenStreetMap) for community insight "
+     desc:"Are there resources that utilise open tools (e.g., OpenStreetMap) for community insight?"
    },
    {
      name: "GFDRR",
@@ -395,7 +399,7 @@ var data = {
      source:47,
      target:5,
      force:true,
-     desc:"Utilising an interface/platform that includes community involvement with expert guidance while also using GIS"
+     desc:"Can there be an interface/platform that includes community involvement with expert guidance while also using GIS?"
    },
    {
      name: "Web-GIS flash flood Italy",
@@ -411,7 +415,7 @@ var data = {
      source:49,
      target:5,
      force:true,
-     desc:"Democratizing EO data helps ease any potential future users in to the process (starting from kids!)"
+     desc:"Does democratizing EO data help ease any potential future users in to the process (starting from kids!)?"
    },
    {
      name: "BLiF",
@@ -426,7 +430,7 @@ var data = {
      name: "Modelling",
      title: "Modelling",
      subtitle:"",
-     x: ((windowW*1.5)/6)*2 - (((windowW*1.5)/6)/2),
+     x: ((windowW)/6)*2 - (((windowW)/6)/2),
      y: 600,
      type: "Main",
      fixed: true
@@ -438,7 +442,7 @@ var data = {
      source:52,
      target:51,
      force:true,
-     desc:"Having a common framework of modelling and planning everyone can abide by/refer back to is necessary "
+     desc:"Is having a common framework of modelling and planning by which everyone can refer back to necessary?"
    },
    {
      name: "Data61",
@@ -454,7 +458,7 @@ var data = {
      source:54,
      target:51,
      force:true,
-     desc:"Alongside a common framework -  a common ‘protocol’ is also key, specifically, organising and prioritising the various technologies throughout the disaster cycle"
+     desc:"Is a common ‘protocol’, specifically, organising and prioritising the various technologies throughout the disaster cycle, key?"
    },
    {
      name: "University of Portsmouth",
@@ -470,7 +474,7 @@ var data = {
      source:56,
      target:51,
      force:true,
-     desc:"Give users the ability to create custom simulations of event (fire, flood, etc) "
+     desc:"Can we give users the ability to create custom simulations of events (fire, flood, etc)?"
    },
    {
      name: "Spark",
@@ -486,7 +490,7 @@ var data = {
      source:58,
      target:51,
      force:true,
-     desc:"Need for an aggregator of data and insights to aid decision makers. Supported by a standardised methods of reporting and interacting with open data "
+     desc:"Is there a need for an aggregator of data and insights that standardises methods of reporting and interactions with open data, to in turn aid decision makers?"
    },
    {
      name: "Melodies",
@@ -502,7 +506,7 @@ var data = {
      source:60,
      target:4,
      force:true,
-     desc:"Establishing an inclusive approach to the whole community for disaster mapping helps unlock detailed and valuable maps via a variety of data sources"
+     desc:"Is there an inclusive approach for all stakeholders within disaster mapping, that helps unlock detailed and valuable maps from a variety of data sources?"
    },
    {
      name: "Humanitarian OpenStreetMap",
@@ -518,7 +522,7 @@ var data = {
      source:62,
      target:4,
      force:true,
-     desc:"Human computing can help combine data types to then speed up and ameliorate machine learning"
+     desc:"Does human computing help combine data types to then speed up and ameliorate machine learning?"
    },
    {
      name: "MicroMappers",
@@ -534,7 +538,7 @@ var data = {
      source:64,
      target:4,
      force:true,
-     desc:"There is a need for user-generated data that is deemed trustworthy in order to properly act upon the information given"
+     desc:"Is there a need for user-generated data that is deemed trustworthy to then correctly act upon the information given?"
    },
    {
      name: "Energic",
@@ -550,7 +554,7 @@ var data = {
      source:66,
      target:6,
      force:true,
-     desc:"Common factors are technologies (mainly machine learning) that reduce the cognitive load for decision makers in crucial moments"
+     desc:"Is machine learning a ‘go-to’ method when wanting to reduce the cognitive load for decision makers in crucial moments?"
    },
    {
      name: "Heal App",
@@ -566,7 +570,7 @@ var data = {
      source:68,
      target:6,
      force:true,
-     desc:"Finding solutions in real time data via the utilisation of natural language"
+     desc:"Are there ways of finding solutions in real time data via utilising natural language?"
    },
    {
      name: "Lux",
@@ -582,7 +586,7 @@ var data = {
      source:70,
      target:6,
      force:true,
-     desc:"Reducing search and time costs via AI analysing incoming texts and images for crisis alerts"
+     desc:"Can AI reduce search and time costs via analysing incoming texts and images for crisis alerts? "
    },
    {
      name: "AIDR",
@@ -598,7 +602,7 @@ var data = {
      source:72,
      target:6,
      force:true,
-     desc:"Improving location check and cross validation of it to act accordingly and with certainty"
+     desc:"How can location checking and its cross validation be improved, to act accordingly and with certainty in critical moments?"
    },
    {
      name: "HawkEye360",
@@ -614,7 +618,7 @@ var data = {
      source:74,
      target:6,
      force:true,
-     desc:"Need for the co-ordination of efforts post disaster for effective response, supported by AI"
+     desc:"Can AI support the co-ordination of efforts post disaster for effective response?"
    },
    {
      name: "One Concern",
@@ -630,7 +634,7 @@ var data = {
      source:76,
      target:6,
      force:true,
-     desc:"User initiated actions to address emergency situation such as having a choice of what service they need and which they choose to act on"
+     desc:"Are there user-initiated actions that can address their specific emergency situation, such as having a choice of what service they need and which they choose to act on?"
    },
    {
      name: "EWN",
@@ -646,7 +650,7 @@ var data = {
      source:78,
      target:0,
      force:true,
-     desc:"Access to niche and value added satellite data is crucial"
+     desc:"Is there access to niche and value added satellite data? "
    },
    {
      name: "Digital Globe",
@@ -662,7 +666,7 @@ var data = {
      source:80,
      target:0,
      force:true,
-     desc:"Niche data needs to be given to the respective influential decision makers"
+     desc:"Is niche satellite data given to the right influential decision makers?"
    },
    {
      name: "Earth-i",
@@ -678,7 +682,7 @@ var data = {
      source:82,
      target:0,
      force:true,
-     desc:"To ensure data is always valid and reliable, 24/7 monitoring from various inputs is key"
+     desc:"Is there a way to ensure data is always valid and reliable with a 24/7 coverage of the various inputs?"
    },
    {
      name: "BlackSky",
@@ -691,10 +695,11 @@ var data = {
    {
      name: "Insight",
      type: "insight",
+     howmight:true,
      source:84,
      target:0,
      force:true,
-     desc:"A platform allowing for the standardization, coordination, and creation of a common framework of methods addressing disaster response."
+     desc:"create a platform that standardizes and coordinates, a common framework of methods addressing disaster response?"
    },
  
   
@@ -1339,15 +1344,26 @@ var data = {
 
  var c10 = d3.scale.category10();
  var body = d3.select("body");
- var svg = body
+ // var svg = body
+ //   .append("svg")
+ //   .attr("width", windowW)
+ //   .attr("height", windowH)
+ //    .call(d3.behavior.zoom().on("zoom", function () {
+ //    svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+ //  }))
+ //  .append("g");
+
+
+   var svg = body
    .append("svg")
    .attr("width", windowW)
    .attr("height", windowH)
+
     .call(d3.behavior.zoom().on("zoom", function () {
     svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
   }))
   .append("g");
-
+svg.attr("transform", "translate(" +(windowW-0.5*windowW)/2+','+(windowH-0.5*windowH)/2+ ")" + " scale(0.5)");
  var container = svg.append("g");
 
 
@@ -1430,7 +1446,7 @@ var mainNodeH = 50;
     .gravity(0.01)
  
   
-.charge(-500)
+.charge(-1000)
     
     .size([windowW, windowH]);
 
@@ -1441,7 +1457,7 @@ var mainNodeH = 50;
     }))
         .linkDistance(function(d){
           if(d.type == "insight"){
-            return 115;
+            return 170;
           } else {
             return 25;
           }
@@ -1481,6 +1497,22 @@ var insightNodes = svg.selectAll("insightNodes")
                     .append("xhtml:body")
                     .html(function(d){
                       var thing = '<div class="insight-text-box" style="width: 70px; height:100%;">'+d.desc+'</div>'
+                      return thing;
+                    });
+
+var howmightwe = insightNodes.append('foreignObject')
+                  .attr('x', -50)
+                    .attr('y', -70)
+                    .attr('width', 75)
+                    .attr('height', 75)
+                    .append("xhtml:body")
+                    .html(function(d){
+                      if(d.howmight){
+                        var thing = '<div class="insight-how-might-we" style="width: 70px; height:100%;">How might we...</div>'
+                      } else{
+                        var thing = "";
+                      }
+                      
                       return thing;
                     });
 
@@ -1525,7 +1557,7 @@ var insightNodes = svg.selectAll("insightNodes")
 
 
   function tick(e) {
-
+ 
 
  	 // var k = 6 * e.alpha;
    //  data.nodes.filter(function(d){
@@ -1616,7 +1648,13 @@ var insightNodes = svg.selectAll("insightNodes")
                       return thing;
                     });                  
 
-    
+$( document ).ready(function() {
+  for(var i = 0; i< data.nodes.length; i++){
+
+    $("#foo").append("<div>"+data.nodes[i].title+"</div>");
+  }
+});
+
 
  	
 
