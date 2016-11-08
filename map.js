@@ -6,7 +6,7 @@ var data = {
    nodes: [
    {
      name: "Mission Control",
-     title:"Mission <br> Control",
+     title:"Mission Control",
      subtitle:"",
      x: windowW/2,
      y: 100,
@@ -60,7 +60,7 @@ var data = {
    },
    {
      name: "Design for Fog",
-     title: "Design for Fog",
+     title: "Situational Awareness",
      subtitle:"Human Factors",
      x: (windowW/6)*5 - ((windowW/6)/2),
      y: 600,
@@ -423,14 +423,280 @@ var data = {
    },
 
    {
-     name: "Modeling",
-     title: "Modeling",
+     name: "Modelling",
+     title: "Modelling",
      subtitle:"",
      x: (windowW/6)*2 - ((windowW/6)/2),
      y: 600,
      type: "Main",
      fixed: true
    },
+
+   {
+     name: "Insight",
+     type: "insight",
+     source:52,
+     target:51,
+     force:true,
+     desc:"Having a common framework of modelling and planning everyone can abide by/refer back to is necessary "
+   },
+   {
+     name: "Data61",
+     type: "example",
+     source:53,
+     target:52,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:54,
+     target:51,
+     force:true,
+     desc:"Alongside a common framework -  a common ‘protocol’ is also key, specifically, organising and prioritising the various technologies throughout the disaster cycle"
+   },
+   {
+     name: "University of Portsmouth",
+     type: "example",
+     source:55,
+     target:54,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:56,
+     target:51,
+     force:true,
+     desc:"Give users the ability to create custom simulations of event (fire, flood, etc) "
+   },
+   {
+     name: "Spark",
+     type: "example",
+     source:57,
+     target:56,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:58,
+     target:51,
+     force:true,
+     desc:"Need for an aggregator of data and insights to aid decision makers. Supported by a standardised methods of reporting and interacting with open data "
+   },
+   {
+     name: "Melodies",
+     type: "example",
+     source:59,
+     target:58,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:60,
+     target:4,
+     force:true,
+     desc:"Establishing an inclusive approach to the whole community for disaster mapping helps unlock detailed and valuable maps via a variety of data sources"
+   },
+   {
+     name: "Humanitarian OpenStreetMap",
+     type: "example",
+     source:61,
+     target:60,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:62,
+     target:4,
+     force:true,
+     desc:"Human computing can help combine data types to then speed up and ameliorate machine learning"
+   },
+   {
+     name: "MicroMappers",
+     type: "example",
+     source:63,
+     target:62,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:64,
+     target:4,
+     force:true,
+     desc:"There is a need for user-generated data that is deemed trustworthy in order to properly act upon the information given"
+   },
+   {
+     name: "Energic",
+     type: "example",
+     source:65,
+     target:64,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:66,
+     target:6,
+     force:true,
+     desc:"Common factors are technologies (mainly machine learning) that reduce the cognitive load for decision makers in crucial moments"
+   },
+   {
+     name: "Heal App",
+     type: "example",
+     source:67,
+     target:66,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:68,
+     target:6,
+     force:true,
+     desc:"Finding solutions in real time data via the utilisation of natural language"
+   },
+   {
+     name: "Lux",
+     type: "example",
+     source:69,
+     target:68,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:70,
+     target:6,
+     force:true,
+     desc:"Reducing search and time costs via AI analysing incoming texts and images for crisis alerts"
+   },
+   {
+     name: "AIDR",
+     type: "example",
+     source:71,
+     target:70,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:72,
+     target:6,
+     force:true,
+     desc:"Improving location check and cross validation of it to act accordingly and with certainty"
+   },
+   {
+     name: "HawkEye360",
+     type: "example",
+     source:73,
+     target:72,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:74,
+     target:6,
+     force:true,
+     desc:"Need for the co-ordination of efforts post disaster for effective response, supported by AI"
+   },
+   {
+     name: "One Concern",
+     type: "example",
+     source:75,
+     target:74,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:76,
+     target:6,
+     force:true,
+     desc:"User initiated actions to address emergency situation such as having a choice of what service they need and which they choose to act on"
+   },
+   {
+     name: "EWN",
+     type: "example",
+     source:77,
+     target:76,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:78,
+     target:0,
+     force:true,
+     desc:"Access to niche and value added satellite data is crucial"
+   },
+   {
+     name: "Digital Globe",
+     type: "example",
+     source:79,
+     target:78,
+     force:true,
+     desc:""
+   },
+     {
+     name: "Insight",
+     type: "insight",
+     source:80,
+     target:0,
+     force:true,
+     desc:"Niche data needs to be given to the respective influential decision makers"
+   },
+   {
+     name: "Earth-i",
+     type: "example",
+     source:81,
+     target:80,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:82,
+     target:0,
+     force:true,
+     desc:"To ensure data is always valid and reliable, 24/7 monitoring from various inputs is key"
+   },
+   {
+     name: "BlackSky",
+     type: "example",
+     source:83,
+     target:82,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:84,
+     target:0,
+     force:true,
+     desc:"A platform allowing for the standardization, coordination, and creation of a common framework of methods addressing disaster response."
+   },
+ 
   
   
    
@@ -445,7 +711,7 @@ var data = {
    },
    {
      source: "Prediction",
-     target: "Modeling"
+     target: "Modelling"
    },
    {
      source: "Mission Control",
@@ -484,7 +750,7 @@ var data = {
      target: "Aftermath"
    },
     {
-     source: "Modeling",
+     source: "Modelling",
      target: "Learning"
    },
   
@@ -800,6 +1066,270 @@ var data = {
      force:true,
      desc:""
    },
+    {
+     name: "Insight",
+     type: "insight",
+     source:52,
+     target:51,
+     force:true,
+     desc:"Having a common framework of modelling and planning everyone can abide by/refer back to is necessary "
+   },
+   {
+     name: "Data61",
+     type: "example",
+     source:53,
+     target:52,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:54,
+     target:51,
+     force:true,
+     desc:"Alongside a common framework -  a common ‘protocol’ is also key, specifically, organising and prioritising the various technologies throughout the disaster cycle"
+   },
+   {
+     name: "University of Portsmouth",
+     type: "example",
+     source:55,
+     target:54,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:56,
+     target:51,
+     force:true,
+     desc:"Give users the ability to create custom simulations of event (fire, flood, etc) "
+   },
+   {
+     name: "Spark",
+     type: "example",
+     source:57,
+     target:56,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:58,
+     target:51,
+     force:true,
+     desc:"Need for an aggregator of data and insights to aid decision makers. Supported by a standardised methods of reporting and interacting with open data "
+   },
+   {
+     name: "Melodies",
+     type: "example",
+     source:59,
+     target:58,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:60,
+     target:4,
+     force:true,
+     desc:"Establishing an inclusive approach to the whole community for disaster mapping helps unlock detailed and valuable maps via a variety of data sources"
+   },
+   {
+     name: "Humanitarian OpenStreetMap",
+     type: "example",
+     source:61,
+     target:60,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:62,
+     target:4,
+     force:true,
+     desc:"Human computing can help combine data types to then speed up and ameliorate machine learning"
+   },
+   {
+     name: "MicroMappers",
+     type: "example",
+     source:63,
+     target:62,
+     force:true,
+     desc:""
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:64,
+     target:4,
+     force:true,
+     desc:"There is a need for user-generated data that is deemed trustworthy in order to properly act upon the information given"
+   },
+   {
+     name: "Energic",
+     type: "example",
+     source:65,
+     target:64,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:66,
+     target:6,
+     force:true,
+     desc:"Common factors are technologies (mainly machine learning) that reduce the cognitive load for decision makers in crucial moments"
+   },
+   {
+     name: "Heal App",
+     type: "example",
+     source:67,
+     target:66,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:68,
+     target:6,
+     force:true,
+     desc:"Finding solutions in real time data via the utilisation of natural language"
+   },
+   {
+     name: "Lux",
+     type: "example",
+     source:69,
+     target:68,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:70,
+     target:6,
+     force:true,
+     desc:"Reducing search and time costs via AI analysing incoming texts and images for crisis alerts"
+   },
+   {
+     name: "AIDR",
+     type: "example",
+     source:71,
+     target:70,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:72,
+     target:6,
+     force:true,
+     desc:"Improving location check and cross validation of it to act accordingly and with certainty"
+   },
+   {
+     name: "HawkEye360",
+     type: "example",
+     source:73,
+     target:72,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:74,
+     target:6,
+     force:true,
+     desc:"Need for the co-ordination of efforts post disaster for effective response, supported by AI"
+   },
+   {
+     name: "One Concern",
+     type: "example",
+     source:75,
+     target:74,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:76,
+     target:6,
+     force:true,
+     desc:"User initiated actions to address emergency situation such as having a choice of what service they need and which they choose to act on"
+   },
+   {
+     name: "EWN",
+     type: "example",
+     source:77,
+     target:76,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:78,
+     target:0,
+     force:true,
+     desc:"Access to niche and value added satellite data is crucial"
+   },
+   {
+     name: "Digital Globe",
+     type: "example",
+     source:79,
+     target:78,
+     force:true,
+     desc:""
+   },
+     {
+     name: "Insight",
+     type: "insight",
+     source:80,
+     target:0,
+     force:true,
+     desc:"Niche data needs to be given to the respective influential decision makers"
+   },
+   {
+     name: "Earth-i",
+     type: "example",
+     source:81,
+     target:80,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:82,
+     target:0,
+     force:true,
+     desc:"To ensure data is always valid and reliable, 24/7 monitoring from various inputs is key"
+   },
+   {
+     name: "BlackSky",
+     type: "example",
+     source:83,
+     target:82,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:84,
+     target:0,
+     force:true,
+     desc:"A platform allowing for the standardization, coordination, and creation of a common framework of methods addressing disaster response."
+   },
    ],
    insightNodes:[
  
@@ -879,7 +1409,7 @@ var mainNodeH = 50;
      var force = d3.layout.force()
     .gravity(0.01)
  
-    .linkDistance(100)
+  
 .charge(-500)
     
     .size([windowW, windowH]);
@@ -889,6 +1419,13 @@ var mainNodeH = 50;
       .links(data.forceLinks.filter(function(d){
     return d.force == true;
     }))
+        .linkDistance(function(d){
+          if(d.type == "insight"){
+            return 115;
+          } else {
+            return 25;
+          }
+        })
       .start();
 
 
@@ -896,6 +1433,7 @@ var insightLink = svg.selectAll("insightLink")
         .data(data.forceLinks.filter(function(d){
     return d.force == true;
     }))
+
       .enter().append("line")
         .attr("class", "insightLink");
 
@@ -1049,7 +1587,7 @@ var insightNodes = svg.selectAll("insightNodes")
                        return d.y -10;
                       })
                     .attr('width', 90)
-                    .attr('height', 45)
+                    .attr('height', 40)
                     .append("xhtml")
                     .html(function(d){
                       var thing = '<div class="main-sub-box" style="width: 90px; height:90px;"><p>'+d.subtitle+'</p></div>';
