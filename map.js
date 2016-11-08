@@ -9,7 +9,7 @@ var data = {
      title:"Mission Control",
      subtitle:"",
      x: (windowW)/2,
-     y: 100,
+     y: 20,
      type: "Main",
      fixed: true
    }, 
@@ -27,7 +27,7 @@ var data = {
      title:"Auditing",
      subtitle:"",
      x: (windowW)/6 - (((windowW)/6)),
-     y: 800,
+     y: 900,
      type: "Main",
      fixed: true
    },
@@ -45,7 +45,7 @@ var data = {
      title: "Mapping",
      subtitle:"Citizen Mapping",
      x: ((windowW)/6)*3 - (((windowW)/6)/2),
-     y: 800,
+     y: 900,
      type: "Main",
      fixed: true
    },
@@ -54,7 +54,7 @@ var data = {
      title: "Planning",
      subtitle:"Citizen Planning",
      x: ((windowW)/6)*4 + (((windowW)/6)/2),
-     y: 600,
+     y: 700,
      type: "Main",
      fixed: true
    },
@@ -63,7 +63,7 @@ var data = {
      title: "Situational Awareness",
      subtitle:"Human Factors",
      x: ((windowW)/6)*5 + (((windowW)/6)/2),
-     y: 600,
+     y: 700,
      type: "Main",
      fixed: true
    },
@@ -72,7 +72,7 @@ var data = {
      title:"Rebuild & Recover",
     subtitle:"",
      x: ((windowW)/6)*6 + (((windowW)/6)/2),
-     y: 600,
+     y: 700,
      type: "Main",
      fixed: true
    },
@@ -431,7 +431,7 @@ var data = {
      title: "Modelling",
      subtitle:"",
      x: ((windowW)/6)*2 - (((windowW)/6)/2),
-     y: 600,
+     y: 700,
      type: "Main",
      fixed: true
    },
