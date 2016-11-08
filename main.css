@@ -1,3 +1,25 @@
+#map{overflow:hidden;
+
+}
+
+.thesvg{
+position: relative;
+left: 50%;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+.title-grid{
+	justify-content: center;
+	border-bottom:1px solid rgba(0,0,0,0.1);;
+
+}
+
+.main-title h1{
+	font-family: 'Roboto Slab', serif;
+	font-size:1em;
+	margin-left:1em;
+}
 .Main rect{
 	fill:grey;
 	stroke:black;

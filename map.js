@@ -1,6 +1,6 @@
 var windowW = window.innerWidth;
 var windowH = window.innerHeight;
-
+var mapW = 2000;
 
 var data = {
    nodes: [
@@ -8,7 +8,7 @@ var data = {
      name: "Mission Control",
      title:"Mission Control",
      subtitle:"",
-     x: (windowW)/2,
+     x: (mapW)/2,
      y: 20,
      type: "Main",
      fixed: true
@@ -17,7 +17,7 @@ var data = {
      name: "Prediction",
      title: "Prediction",
      subtitle:"",
-     x: (windowW)/6 - (((windowW)/6)),
+     x: (mapW)/6 - (((mapW)/6)),
      y: 400,
      type: "Main",
      fixed: true
@@ -26,7 +26,7 @@ var data = {
      name: "Auditing",
      title:"Auditing",
      subtitle:"",
-     x: (windowW)/6 - (((windowW)/6)),
+     x: (mapW)/6 - (((mapW)/6)),
      y: 900,
      type: "Main",
      fixed: true
@@ -35,7 +35,7 @@ var data = {
      name: "Learning",
      title: "Learning",
      subtitle:"",
-     x: ((windowW)/6)*3 - (((windowW)/6)/2),
+     x: ((mapW)/6)*3 - (((mapW)/6)/2),
      y: 400,
      type: "Main",
      fixed: true
@@ -44,7 +44,7 @@ var data = {
      name: "Mapping",
      title: "Mapping",
      subtitle:"Citizen Mapping",
-     x: ((windowW)/6)*3 - (((windowW)/6)/2),
+     x: ((mapW)/6)*3 - (((mapW)/6)/2),
      y: 900,
      type: "Main",
      fixed: true
@@ -53,7 +53,7 @@ var data = {
      name: "Planning",
      title: "Planning",
      subtitle:"Citizen Planning",
-     x: ((windowW)/6)*4 + (((windowW)/6)/2),
+     x: ((mapW)/6)*4 + (((mapW)/6)/2),
      y: 700,
      type: "Main",
      fixed: true
@@ -62,7 +62,7 @@ var data = {
      name: "Design for Fog",
      title: "Situational Awareness",
      subtitle:"Human Factors",
-     x: ((windowW)/6)*5 + (((windowW)/6)/2),
+     x: ((mapW)/6)*5 + (((mapW)/6)/2),
      y: 700,
      type: "Main",
      fixed: true
@@ -71,7 +71,7 @@ var data = {
      name: "Aftermath",
      title:"Rebuild & Recover",
     subtitle:"",
-     x: ((windowW)/6)*6 + (((windowW)/6)/2),
+     x: ((mapW)/6)*6 + (((mapW)/6)/2),
      y: 700,
      type: "Main",
      fixed: true
@@ -527,7 +527,7 @@ var data = {
      name: "Modelling",
      title: "Modelling",
      subtitle:"",
-     x: ((windowW)/6)*2 - (((windowW)/6)/2),
+     x: ((mapW)/6)*2 - (((mapW)/6)/2),
      y: 700,
      type: "Main",
      fixed: true
@@ -1524,7 +1524,7 @@ var data = {
 };
 
  var c10 = d3.scale.category10();
- var body = d3.select("body");
+ var body = d3.select("#map");
  // var svg = body
  //   .append("svg")
  //   .attr("width", windowW)
@@ -1534,17 +1534,23 @@ var data = {
  //  }))
  //  .append("g");
 
+ var scaler = 0.5;
+var zoomWidth = (mapW-scaler*mapW)/2
+var zoomHeight = (windowH-scaler*windowH)/2
 
    var svg = body
    .append("svg")
-   .attr("width", windowW)
+   .attr("class","thesvg")
+   .attr("width", 2000)
    .attr("height", windowH-100)
 
     .call(d3.behavior.zoom().on("zoom", function () {
     svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
   }))
   .append("g");
-svg.attr("transform", "translate(" +(windowW-0.5*windowW)/2+','+(windowH-0.5*windowH)/2+ ")" + " scale(0.5)");
+
+  // svg.attr("transform", "translate("+zoomWidth+","+zoomHeight+") scale("+scaler+")");
+// svg.attr("transform", "translate(" +(mapW-0.5*mapW)/2+','+(windowH-0.5*windowH)/2+ ")" + " scale(0.5)");
  var container = svg.append("g");
 
 
@@ -1556,41 +1562,41 @@ svg.attr("transform", "translate(" +(windowW-0.5*windowW)/2+','+(windowH-0.5*win
 console.log("updating");
 
 var timeline = svg.append("line")
-                        .attr("x1",0-(windowW/6))
+                        .attr("x1",0-(mapW/6))
                           .attr("y1", windowH+300)
-                        .attr("x2", windowW+(windowW/6))
+                        .attr("x2", mapW+(mapW/6))
                          .attr("y2", windowH+300)
                          .attr('fill', '#101717')
             .attr('stroke','#101717');
 
             var practical = svg.append("text")
               .text("Practical Preventive")
-              .attr("x", 0-((windowW/6)) + ((windowW/6)*2))
+              .attr("x", 0-((mapW/6)) + ((mapW/6)*2))
             .attr("y", windowH+300);
 
             var identified = svg.append("text")
               .text("Identified Vulnerabilities")
-              .attr("x", 0-(windowW/6))
+              .attr("x", 0-(mapW/6))
             .attr("y", windowH+300);
 
             var connected = svg.append("text")
               .text("Connected Communities")
-              .attr("x", 0-((windowW/6)) + ((windowW/6)*3))
+              .attr("x", 0-((mapW/6)) + ((mapW/6)*3))
             .attr("y", windowH+300);
 
              var early = svg.append("text")
               .text("Early Warning Systems")
-              .attr("x", 0-((windowW/6)) + ((windowW/6)*4))
+              .attr("x", 0-((mapW/6)) + ((mapW/6)*4))
             .attr("y", windowH+300);
 
             var emergency = svg.append("text")
               .text("Emergency Response Plan")
-              .attr("x", 0-((windowW/6)) + ((windowW/6)*5))
+              .attr("x", 0-((mapW/6)) + ((mapW/6)*5))
             .attr("y", windowH+300);
 
             var rebuild = svg.append("text")
               .text("Rebuild & Recover")
-              .attr("x", 0-((windowW/6)) + ((windowW/6)*6))
+              .attr("x", 0-((mapW/6)) + ((mapW/6)*6))
             .attr("y", windowH+300);
 
 
