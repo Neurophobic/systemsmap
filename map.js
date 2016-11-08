@@ -13,49 +13,49 @@ var data = {
    }, 
    {
      name: "Prediction",
-     x: windowW/5 - ((windowW/5)/2),
+     x: windowW/6 - ((windowW/6)/2),
      y: 400,
      type: "Main",
      fixed: true
    }, 
    {
      name: "Auditing",
-     x: windowW/5 - ((windowW/5)/2),
+     x: windowW/6 - ((windowW/6)/2),
      y: 800,
      type: "Main",
      fixed: true
    },
    {
      name: "Learning",
-     x: (windowW/5)*2 - ((windowW/5)/2),
+     x: (windowW/6)*3 - ((windowW/6)/2),
      y: 400,
      type: "Main",
      fixed: true
    },
    {
      name: "Mapping",
-     x: (windowW/5)*2 - ((windowW/5)/2),
+     x: (windowW/6)*3 - ((windowW/6)/2),
      y: 800,
      type: "Main",
      fixed: true
    },
    {
      name: "Planning",
-     x: (windowW/5)*3 - ((windowW/5)/2),
+     x: (windowW/6)*4 - ((windowW/6)/2),
      y: 600,
      type: "Main",
      fixed: true
    },
    {
      name: "Design for Fog",
-     x: (windowW/5)*4 - ((windowW/5)/2),
+     x: (windowW/6)*5 - ((windowW/6)/2),
      y: 600,
      type: "Main",
      fixed: true
    },
    {
      name: "Aftermath",
-     x: (windowW/5)*5 - ((windowW/5)/2),
+     x: (windowW/6)*6 - ((windowW/6)/2),
      y: 600,
      type: "Main",
      fixed: true
@@ -405,6 +405,14 @@ var data = {
      force:true,
      desc:""
    },
+
+   {
+     name: "Modeling",
+     x: (windowW/6)*2 - ((windowW/6)/2),
+     y: 600,
+     type: "Main",
+     fixed: true
+   },
   
   
    
@@ -419,7 +427,7 @@ var data = {
    },
    {
      source: "Prediction",
-     target: "Learning"
+     target: "Modeling"
    },
    {
      source: "Mission Control",
@@ -457,13 +465,323 @@ var data = {
      source: "Mission Control",
      target: "Aftermath"
    },
+    {
+     source: "Modeling",
+     target: "Learning"
+   },
   
    ], 
    forceLinks: [
+        {
+     name: "Insight",
+     type: "insight",
+     source:8,
+     target:1,
+     force:true,
+   },
    {
-    source:2,
-    target:0
-   }
+     name: "Amicus",
+     type: "example",
+     source:9,
+     target:8,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:10,
+     target:2,
+     force:true,
+   },
+   {
+     name: "BlightSTAT",
+     type: "example",
+     source:11,
+     target:10,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:12,
+     target:2,
+     force:true,
+   },
+   {
+     name: "PVA",
+     type: "example",
+     source:13,
+     target:12,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:14,
+     target:2,
+     force:true,
+   },
+   {
+     name: "NSW Rural Fire Service",
+     type: "example",
+     source:15,
+     target:14,
+     force:true,
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:16,
+     target:2,
+     force:true,
+   },
+   {
+     name: "SES",
+     type: "example",
+     source:17,
+     target:16,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:18,
+     target:2,
+     force:true,
+   },
+   {
+     name: "IAG Floods",
+     type: "example",
+     source:19,
+     target:18,
+     force:true,
+   }, 
+   {
+     name: "Insight",
+     type: "insight",
+     source:20,
+     target:2,
+     force:true,
+   },
+   {
+     name: "Swiss Re CatNet",
+     type: "example",
+     source:21,
+     target:20,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:22,
+     target:3,
+     force:true,
+   },
+   {
+     name: "CEOS DRM",
+     type: "example",
+     source:23,
+     target:22,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:24,
+     target:3,
+     force:true,
+   },
+  {
+     name: "Insight",
+     type: "insight",
+     source:25,
+     target:3,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:26,
+     target:3,
+     force:true,
+   },
+   {
+     name: "European handbook of crowdsourcing",
+     type: "example",
+     source:27,
+     target:26,
+     force:true,
+   },
+   {
+     name: "Crowd4Sat",
+     type: "example",
+     source:28,
+     target:26,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:29,
+     target:3,
+     force:true,
+   },
+   {
+     name: "Digital Globe",
+     type: "example",
+     source:30,
+     target:29,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:31,
+     target:3,
+     force:true,
+   },
+   {
+     name: "UCL (IRDR)",
+     type: "example",
+     source:32,
+     target:31,
+     force:true,
+   },
+   {
+     name: "NERC",
+     type: "example",
+     source:33,
+     target:31,
+     force:true,
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     source:34,
+     target:4,
+     force:true,
+   },
+   {
+     name: "Terrapattern",
+     type: "example",
+     source:35,
+     target:34,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:36,
+     target:4,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:37,
+     target:4,
+     force:true,
+   },
+    {
+     name: "Starlab iArbol",
+     type: "example",
+     source:38,
+     target:37,
+     force:true,
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:39,
+     target:4,
+     force:true,
+   },
+   {
+     name: "GeoDesign (science & design)",
+     type: "example",
+     source:40,
+     target:39,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:41,
+     target:4,
+     force:true,
+   },
+   {
+     name: "Data Cube",
+     type: "example",
+     source:42,
+     target:41,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:43,
+     target:4,
+     force:true,
+   },
+   {
+     name: "MapBox",
+     type: "example",
+     source:44,
+     target:43,
+     force:true,
+     desc:""
+   },
+
+   {
+     name: "Insight",
+     type: "insight",
+     source:45,
+     target:5,
+     force:true,
+   },
+   {
+     name: "GFDRR",
+     type: "example",
+     source:46,
+     target:45,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:47,
+     target:5,
+     force:true,
+   },
+   {
+     name: "Web-GIS flash flood Italy",
+     type: "example",
+     source:48,
+     target:47,
+     force:true,
+     desc:""
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     source:49,
+     target:5,
+     force:true,
+   },
+   {
+     name: "BLiF",
+     type: "example",
+     source:50,
+     target:49,
+     force:true,
+     desc:""
+   },
    ],
    insightNodes:[
  
@@ -493,19 +811,7 @@ var data = {
 console.log("updating");
 
 
- var force = d3.layout.force()
-    .gravity(0)
- 
-    .linkDistance(100)
-    .charge(-200)
-    .size([windowW, windowH]);
 
- force
-      .nodes(data.nodes)
-      .links(data.nodes.filter(function(d){
- 		return d.force == true;
- 		}))
-      .start();
 
  var drag = d3.behavior.drag()
    .on("drag", function(d, i) {
@@ -556,32 +862,38 @@ var mainNodeH = 50;
  			return d.type;
  		});
 
- mainNodes.append("rect")
- 		.attr('class', function(d){
- 			return d.type;
- 		})
- 		.attr("x", function(d){
- 			return d.x - mainNodeW/2;
- 		})
-		.attr("y", function(d){
-			return d.y - mainNodeH/2;
-		})
-		.attr("height", mainNodeH)
-		.attr("width", mainNodeW);
-
-mainNodes.append("text")
-
-		.attr("x", function(d){
- 			return d.x - mainNodeW/2;
- 		})
-		.attr("y", function(d){
-			return d.y ;
-		})
-		.text(function(d){
-			return d.name;
-		});
 
 
+
+     var force = d3.layout.force()
+    .gravity(0.01)
+ 
+    .linkDistance(100)
+.charge(-500)
+    
+    .size([windowW, windowH]);
+
+ force
+      .nodes(data.nodes)
+      .links(data.forceLinks.filter(function(d){
+    return d.force == true;
+    }))
+      .start();
+
+
+var insightLink = svg.selectAll("insightLink")
+        .data(data.forceLinks.filter(function(d){
+    return d.force == true;
+    }))
+      .enter().append("line")
+        .attr("class", "insightLink");
+
+var exampleLink = svg.selectAll("exampleLink")
+  .data(data.forceLinks.filter(function(d){
+    return d.force == true;
+  }))
+  .enter().append("line")
+     .attr("class", "exampleLink");        
 
 var insightNodes = svg.selectAll("insightNodes")
 	.data(data.nodes.filter(function(d){
@@ -591,22 +903,35 @@ var insightNodes = svg.selectAll("insightNodes")
       .attr("class", "insightNode")
       .call(force.drag);
 
-insightNodes.append("rect")
- 		.attr('class', 'Main')
- 		.attr("x", 0)
-		.attr("y", 0)
-		.attr("height", 20)
-		.attr("width", 20);
+
+ var insightBox = insightNodes.append('foreignObject')
+                    .attr('x', -50)
+                    .attr('y', -40)
+                    .attr('width', 75)
+                    .attr('height', 75)
+                    .append("xhtml:body")
+                    .html(function(d){
+                      var thing = '<div class="insight-text-box" style="width: 70px; height:100%;">'+d.desc+'</div>'
+                      return thing;
+                    });
 
 
 
-var insightLink = svg.selectAll("insightLink")
-      	.data(data.nodes.filter(function(d){
- 		return d.force == true;
- 		}))
-    	.enter().append("line")
-      	.attr("class", "insightLink");
+// insightNodes.append("rect")
+//  		.attr('class', 'insight')
+//  		.attr("x", -15)
+// 		.attr("y", -15)
+// 		.attr("height", 30)
+// 		.attr("width", 30);
 
+// insightNodes.append("text")
+// .attr('class', 'insight-text')
+//   .attr("x",-12)
+//     .attr("y",-10)
+//     .text("hey");
+
+
+ 
 
  var exampleNodes = svg.selectAll("exampleNodes")
  	.data(data.nodes.filter(function(d){
@@ -621,12 +946,33 @@ var insightLink = svg.selectAll("insightLink")
  	.attr("cy",0)
  	.attr("r", 10);
 
- var exampleLink = svg.selectAll("exampleLink")
- 	.data(data.nodes.filter(function(d){
- 		return d.force == true;
- 	}))
- 	.enter().append("line")
-     .attr("class", "exampleLink");
+
+  mainNodes.append("rect")
+    .attr('class', function(d){
+      return d.type;
+    })
+    .attr("x", function(d){
+      return d.x - mainNodeW/2;
+    })
+    .attr("y", function(d){
+      return d.y - mainNodeH/2;
+    })
+    .attr("height", mainNodeH)
+    .attr("width", mainNodeW);
+
+mainNodes.append("text")
+
+    .attr("x", function(d){
+      return d.x - mainNodeW/2;
+    })
+    .attr("y", function(d){
+      return d.y ;
+    })
+    .text(function(d){
+      return d.name;
+    });
+
+
 
 
  force.on("tick", tick);
@@ -635,13 +981,13 @@ var insightLink = svg.selectAll("insightLink")
   function tick(e) {
 
 
- 	 var k = 6 * e.alpha;
-    data.nodes.filter(function(d){
- 		return d.force == true;
- 		}).forEach(function(d, i) {
-      d.source.y += k;
-      d.target.y -= k;
-    });
+ 	 // var k = 6 * e.alpha;
+   //  data.nodes.filter(function(d){
+ 		// return d.force == true;
+ 		// }).forEach(function(d, i) {
+   //    d.source.y += k;
+   //    d.target.y -= k;
+   //  });
 
    insightLink.attr("x1", function(d) { return d.source.x; })
         .attr("y1", function(d) { return d.source.y; })

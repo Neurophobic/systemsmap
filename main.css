@@ -23,3 +23,18 @@
 #add-form{
 	position: relative;
 }
+.insight{
+	fill:white;
+	stroke:black;
+}
+.insight-text{
+	padding-top:5px;
+	font-size: 2px;
+}
+
+.insight-text-box{
+	background-color:white;
+	border:solid 1px black;
+	font-size:7px;
+	text-align: center;
+}
