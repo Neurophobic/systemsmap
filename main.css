@@ -20,6 +20,15 @@ transform: translateX(-50%);
 	font-size:1em;
 	margin-left:1em;
 }
+.instructions{
+	text-align: right;
+}
+.instructions h1{
+	font-family: 'Roboto Slab', serif;
+	font-size:0.7em;
+	margin:1em 1em 0 0;
+	color:rgba(0,0,0,0.6);
+}
 .Main rect{
 	fill:grey;
 	stroke:black;
