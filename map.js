@@ -86,11 +86,16 @@ var data = {
    },
    {
      name: "Amicus",
+     sub:"CSIRO - Data61",
      type: "example",
      source:9,
      target:8,
      force:true,
-     desc:""
+     link:"amicus",
+     need:"To be able to predict fire behaviour",
+     insight:"Can predictive software help manage disaster scenarios better?",
+     resolved:"utilised previous knowledge of bush fire behaviour and created calculation to predict movement of future ones",
+     desc:"Multi-platfrom application that enables the easy calculation of expected fire behaviour from burning conditions that you enter. It synthesises our current knowledge for predicting the behaviour and spread of bushfires in a range of vegetation types as well as providing simple calculations of expected fire danger."
    },
    {
      name: "Insight",
@@ -103,10 +108,15 @@ var data = {
    {
      name: "BlightSTAT",
      type: "example",
+     sub: "New Orleans",
+     link:"blightstat",
      source:11,
      target:10,
      force:true,
-     desc:""
+     need:"lack of efficiency with reconstruction efforts in new orleans post disaster",
+     insight:"Is there a community centred approach to logging, reporting, and measuring declining/damaged buildings, or the general “health state” of a community?",
+     resolved:"created platform of machine learning and human input for decision making on demolishing houses",
+     desc:"New Orleans BlighSTAT – there is a scorecard (algorithm based) helping you decide whether a property should be demolished or not (supervisor checks it) – relatable to how at risk a property is. Done with the help of ENIGMA – data science start up "
    },
    {
      name: "Insight",
@@ -118,11 +128,15 @@ var data = {
    },
    {
      name: "PVA",
+     sub:"Participatory Vulnerabilities Analysis",
      type: "example",
+     link:"pva",
      source:13,
      target:12,
      force:true,
-     desc:"Participatory Vulnerability Analysis "
+     need:"Good PVA studies lead to actionable outcomes that communities can get behind (fostering the need for DRR to be a larger part of the public's conscious.",
+     insight: "Is there an 'Opt – In' community vulnerability analysis; which would allow for a tailored and inclusive exploration of overall vulnerability (not only to assets), and level of resilience as a consequence?",
+     desc:" For determining the current vulnerability of your location PVA’s are held in quite high regard. Suncorp could have a PVA team that negotiates insurance premiums based on evidence. Also outcomes of this study could create community funded ecosystem improvement operations to foster local area resilience and reduce insurance premiums."
    },
    {
      name: "Insight",
@@ -135,10 +149,15 @@ var data = {
    {
      name: "NSW Rural Fire Service",
      type: "example",
+     sub:"Australias regional bush fire management",
+     link:"nsw",
      source:15,
      target:14,
      force:true,
-     desc:""
+     need:"Understand bush fire risk",
+     insight:"Can a community become more engaged with the auditing of assets, therefore creating a more holistic process leading up to the final decisions made?",
+     resolved:"Create strategic plan and data logging for each region.",
+     desc:"Each region develops a plan (BFRMP). It sets out the types of work scheduled to deal with the risk of bush fires in an area. These works may range from a community engagement event to hazard reduction activities."
    },
     {
      name: "Insight",
@@ -151,10 +170,15 @@ var data = {
    {
      name: "SES",
      type: "example",
+     sub:"State Emergency Sevice",
+     link:"ses",
      source:17,
      target:16,
      force:true,
-     desc:""
+     need:"Improve emergency response",
+     insight:"Can future volunteers be motivated to help or take part (not only in the auditing phase) in the whole disaster cycle?",
+     resolved:"Provide organization, reference point.",
+     desc:"The South Australian State Emergency Service (SES) is a volunteer-based organisation that responds to a wide range of emergencies and rescues across the state 24-hours a day, seven days a week, 365-days a year."
    },
    {
      name: "Insight",
@@ -166,11 +190,16 @@ var data = {
    },
    {
      name: "IAG Floods",
+     sub:"Italy",
+     link:"iag",
      type: "example",
      source:19,
      target:18,
      force:true,
-     desc:""
+     need:"Facilitate understanding of risks and needs in floods",
+     insight:"Is there a method of facilitating participation from the community in to the auditing phase by increasing understanding of their specific risk and needs through address level analysis?",
+     resolved:"Platform for single access point",
+     desc:"Release of a national dataset containing a view of flood risk across Australia. The released data is available at an address and an aggregated level. The address level data provides granular flood risk information via an api and is based on the GNAF February 2016 release."
    }, 
    {
      name: "Insight",
@@ -184,10 +213,15 @@ var data = {
    {
      name: "Swiss Re CatNet",
      type: "example",
+     sub:"Reinsurance",
+     link:"swissre",
      source:21,
      target:20,
      force:true,
-     desc:""
+     need:"Insurance companies lose lots of money when disaster strikes",
+     insight:"Open up existing “Catastrophe Network” services that measure risk exposure, assessment and resilience to the general public?",
+     resolved:"created a network that includes the usage of satellite imagery, GIS and country/location specific risk info for insurance companies",
+     desc:"Swiss Re (Reinsurance company) has developed a service, Catastrophe Network (CatNet) (with the partnership of ESRI - global mapping company -), that disseminates information to insurers such as risk rates on 500,000 locations, so users can more intelligently evaluate risks."
    },
    {
      name: "Insight",
@@ -199,11 +233,17 @@ var data = {
    },
    {
      name: "CEOS DRM",
+     sub:"Disaster Risk Management",
+     link:"ceos",
      type: "example",
      source:23,
      target:22,
      force:true,
-     desc:""
+     need:"Use earth observation in disaster risk management",
+     insight:"Learning about resilience and disasters is facilitated by the intermediary step between the general Earth Observation outputs and the consequential actions of decision makers",
+     resolved:"Showcase DRM EOs projects to the world / policy makers.",
+
+     desc:"Coordination of earth observation satellites in three pilot projects; floods, seismic hazards and volcanoes. Goals: Protection of lives and safeguarding of property, foster increased use of earth observation in DRM and raise awareness of politicians, decision-makers and stakeholders of the benefits of earth observation in all phases of DRM."
    },
    {
      name: "Insight",
@@ -233,11 +273,16 @@ var data = {
    },
    {
      name: "European handbook of crowdsourcing",
+     sub:"Open Source",
+     link:"handbook",
      type: "example",
      source:27,
      target:26,
      force:true,
-     desc:""
+     need:"To better understand the influence of crowdsourcing for Geographic Information",
+     insight:"Are current data gathering methods properly understood, to in turn improve and utilise them in the best possible way?",
+     resolved:" Making it part of apps - frameworks - designs",
+     desc:"This book focuses on the study of the remarkable new source of geographic information that has become available in the form of user-generated content accessible over the Internet through mobile and Web applications."
    },
    {
      name: "Crowd4Sat",
@@ -1357,7 +1402,7 @@ var data = {
    var svg = body
    .append("svg")
    .attr("width", windowW)
-   .attr("height", windowH)
+   .attr("height", windowH-50)
 
     .call(d3.behavior.zoom().on("zoom", function () {
     svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
@@ -1374,6 +1419,13 @@ svg.attr("transform", "translate(" +(windowW-0.5*windowW)/2+','+(windowH-0.5*win
 
 console.log("updating");
 
+var timeline = svg.append("line")
+                        .attr("x1",0-(windowW/6))
+                          .attr("y1", windowH-5)
+                        .attr("x2", windowW+(windowW/6))
+                         .attr("y2", windowH-5)
+                         .attr('fill', '#101717')
+            .attr('stroke','#101717');;
 
    svg.append('defs').append('marker')
         .attr({'id':'arrowhead',
@@ -1457,7 +1509,7 @@ var mainNodeH = 50;
     }))
         .linkDistance(function(d){
           if(d.type == "insight"){
-            return 170;
+            return 100;
           } else {
             return 25;
           }
@@ -1485,30 +1537,35 @@ var insightNodes = svg.selectAll("insightNodes")
  		return d.type == "insight";
  		}))
 	.enter().append("g")
-      .attr("class", "insightNode")
-      .call(force.drag);
+      .attr("class", "insightNode");
 
 
  var insightBox = insightNodes.append('foreignObject')
-                    .attr('x', -50)
+                    .attr('x', -20)
                     .attr('y', -40)
-                    .attr('width', 75)
-                    .attr('height', 75)
+                    .attr('width', 50)
+                    .attr('height', 50)
                     .append("xhtml:body")
+
                     .html(function(d){
-                      var thing = '<div class="insight-text-box" style="width: 70px; height:100%;">'+d.desc+'</div>'
+                      var thing = '<div class="insight-text-box" style="width: 50px; height:100%;">'+d.desc+'</div>'
                       return thing;
-                    });
+                    })
+                    .on("mouseover", function(d,i)
+ {
+
+     console.log("mouseover");
+ });
 
 var howmightwe = insightNodes.append('foreignObject')
-                  .attr('x', -50)
-                    .attr('y', -70)
-                    .attr('width', 75)
-                    .attr('height', 75)
+                  .attr('x', -20)
+                    .attr('y', -50)
+                    .attr('width', 50)
+                    .attr('height', 40)
                     .append("xhtml:body")
                     .html(function(d){
                       if(d.howmight){
-                        var thing = '<div class="insight-how-might-we" style="width: 70px; height:100%;">How might we...</div>'
+                        var thing = '<div class="insight-how-might-we" style="width: 50px; height:100%;">How might we...</div>'
                       } else{
                         var thing = "";
                       }
@@ -1539,8 +1596,7 @@ var howmightwe = insightNodes.append('foreignObject')
  		return d.type == "example";
  	}))
  	.enter().append("g")
- 		.attr("class", "exampleNode")
- 		.call(force.drag);
+ 		.attr("class", "exampleNode");
 
  exampleNodes.append("circle")
  	.attr("cx",0)
@@ -1650,8 +1706,10 @@ var howmightwe = insightNodes.append('foreignObject')
 
 $( document ).ready(function() {
   for(var i = 0; i< data.nodes.length; i++){
-
-    $("#foo").append("<div>"+data.nodes[i].title+"</div>");
+    if(data.nodes[i].type == "example"){
+      $("#foo").append("<div class='example-card'><h1>"+data.nodes[i].name+"<h2><p>"+data.nodes[i].desc+"<p></div>");
+    }
+    
   }
 });
 
