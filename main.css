@@ -6,6 +6,7 @@
 
 .Main circle{
 	fill:#101717;
+	/*fill:none;*/
 }
 
 .Main text{
@@ -37,16 +38,17 @@
 	stroke:black;
 }
 .insight-text{
-	padding-top:5px;
+	padding-top:10px;
 	font-size: 2px;
 }
 
 .insight-text-box{
-
+	font-family: 'Roboto Slab', serif;
 	background-color:white;
 	border:solid 1px black;
 	font-size:7px;
 	text-align: center;
+	padding:10px;
 }
 
 .main-text-box{

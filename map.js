@@ -1359,6 +1359,20 @@ var data = {
 console.log("updating");
 
 
+   svg.append('defs').append('marker')
+        .attr({'id':'arrowhead',
+               'viewBox':'-0 -5 10 10',
+               'refX':100,
+               'refY':0,
+               //'markerUnits':'strokeWidth',
+               'orient':'auto',
+               'markerWidth':10,
+               'markerHeight':10,
+               'xoverflow':'visible'})
+        .append('svg:path')
+            .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
+            .attr('fill', '#101717')
+            .attr('stroke','#101717');
 
 
  var drag = d3.behavior.drag()
@@ -1394,8 +1408,14 @@ console.log("updating");
      d3.select(this).attr("y2", targetNode.y);
      return targetNode.x
    })
-   .attr("fill", "none")
-   .attr("stroke", "black");
+   .attr("stroke-width", 1)
+            .attr("stroke", "black")
+            .attr('marker-end','url(#arrowhead)');
+
+  
+
+
+
 
 var mainNodeW = 150;
 var mainNodeH = 50;
@@ -1529,6 +1549,8 @@ var insightNodes = svg.selectAll("insightNodes")
     exampleNodes.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
   }
+
+
 
  var mainNodes = svg.selectAll("mainNodes")
   .data(data.nodes.filter(function(d){
