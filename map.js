@@ -1803,14 +1803,14 @@ var howmightwe = insightNodes.append('foreignObject')
 
 
 exampleNodes.append('foreignObject')
-                    .attr('x', -10.5)
-                    .attr('y', -10.5)
-                    .attr('width', 21)
-                    .attr('height', 21)
+                    .attr('x', -11)
+                    .attr('y', -11)
+                    .attr('width', 22)
+                    .attr('height', 22)
                     .append("xhtml:body")
 
                     .html(function(d){
-                      var thing = '<div class="example-name-circle" style="width: 21px; height:21px;">'+d.name+'</div>'
+                      var thing = '<div class="example-name-circle" id="'+d.name+'-circle" style="width: 22px; height:22px;">'+d.name+'</div>'
                       return thing;
                     })
                       .on("click", function(d){

@@ -95,10 +95,14 @@ transform: translateX(-50%);
 }
 
 .example-name-circle{
-	display:flex;
+	  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
     align-items: center; /* Vertical center alignment */
     justify-content: center; /* Horizontal center alignment */
-	overflow:hidden;
+	/*overflow:hidden;*/
 	color:white;
 	font-family: 'Roboto Slab', serif;
 	font-size: 4px;
@@ -107,7 +111,11 @@ transform: translateX(-50%);
 }
 
 .main-text-box{
-	display:flex;
+	  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
     align-items: center; /* Vertical center alignment */
     justify-content: center; /* Horizontal center alignment */
 	color:white;
@@ -125,7 +133,11 @@ transform: translateX(-50%);
 }
 
 .main-sub-box{
-		display:flex;
+		  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
     align-items: center; /* Vertical center alignment */
  
 	color:white;
