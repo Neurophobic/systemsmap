@@ -1812,7 +1812,20 @@ exampleNodes.append('foreignObject')
                     .html(function(d){
                       var thing = '<div class="example-name-circle" style="width: 21px; height:21px;">'+d.name+'</div>'
                       return thing;
-                    });
+                    })
+                      .on("click", function(d){
+    console.log(d.name);
+    var link = "#"+d.link;
+    $(document.body).animate({
+    'scrollTop':   $(link).offset().top
+}, 2000);
+  })
+.on("mouseover", function(d) {
+  d3.select(this).attr("r", 16).style("fill", "grey");
+}) 
+.on("mouseout", function(d) {
+  d3.select(this).attr("r", 15).style("fill", "black");
+});
 
   // exampleNodes.append("text")
   //   .text(function(d){
