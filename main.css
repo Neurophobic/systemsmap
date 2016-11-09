@@ -249,3 +249,10 @@ transform: translateX(-50%);
 	overflow:visible !important;
 }
 
+#fixedbutton {
+	font-family:'CeraPro',serif;
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+}
+
