@@ -1,8 +1,22 @@
+@font-face {
+font-family: CeraPro;
+src: url("fonts/cerapro-regular.otf") format("opentype");
+}
+@font-face {
+font-family: CeraPro;
+font-weight: bold;
+src: url("fonts/cerapro-bold.otf") format("opentype");
+}
+
+
+
+
+
 #map{overflow:hidden;
 
 }
 .timeline{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 	color:grey;
 }
 .thesvg{
@@ -13,21 +27,37 @@ left: 50%;
 transform: translateX(-50%);
 }
 .title-grid{
-	justify-content: center;
+	width:100%;
 	border-bottom:1px solid rgba(0,0,0,0.1);;
 
 }
 
+.main-title{
+	line-height:40px;
+}
+
 .main-title h1{
-	font-family: 'Roboto Slab', serif;
+	top:0;
+	font-family: 'CeraPro', serif;
 	font-size:1em;
 	margin-left:1em;
+	margin-top:1em;
+	/*margin-bottom:1em;*/
+	display:inline-block;
+}
+.main-title img{
+	display:inline-block;
+	margin-top:1em;
+	margin-left:1em;
+	/*margin-bottom:1em;*/
+	height:40px;
+
 }
 .instructions{
 	text-align: right;
 }
 .instructions h1{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 	font-size:0.7em;
 	margin:1em 1em 0 0;
 	color:rgba(0,0,0,0.6);
@@ -44,7 +74,7 @@ transform: translateX(-50%);
 }
 
 .Main text{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 	fill:white;
 	text-transform: uppercase;
 	font-size:12px;
@@ -77,7 +107,7 @@ transform: translateX(-50%);
 }
 
 .insight-text-box{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 	background-color:white;
 	border:solid 1px black;
 	font-size:5px;
@@ -86,7 +116,7 @@ transform: translateX(-50%);
 }
 .insight-how-might-we{
 	color:white;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 	background-color:black;
 	border:solid 1px black;
 	font-size:5px;
@@ -104,7 +134,7 @@ transform: translateX(-50%);
     justify-content: center; /* Horizontal center alignment */
 	/*overflow:hidden;*/
 	color:white;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 	font-size: 4px;
 	hyphens: auto;
 	text-align:center;
@@ -129,7 +159,7 @@ transform: translateX(-50%);
     align-items: center; /* Vertical center alignment */
     justify-content: center; /* Horizontal center alignment */
 	color:white;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 	fill:white;
 	text-transform: uppercase;
 	font-size:1em;
@@ -152,7 +182,7 @@ transform: translateX(-50%);
     align-items: center; /* Vertical center alignment */
  
 	color:white;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 	fill:white;
 	text-transform: uppercase;
 	font-size:8px;
@@ -172,28 +202,28 @@ transform: translateX(-50%);
 	margin-bottom:20px;
 }
 .example-card h1{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 }
 .example-card h2{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'CeraPro', serif;
 	font-size:0.8em;
 	margin-top:-15px;
 }
 
 .example-card p{
-	font-family:'Roboto Slab',serif;
+	font-family:'CeraPro',serif;
 }
 
 .card-holder{
 
 }
 .example-card h4{
-	font-family:'Roboto Slab',serif;
+	font-family:'CeraPro',serif;
 	margin-bottom:5px;
 }
 
 .insight-cat{
-	font-family:'Roboto Slab',serif;
+	font-family:'CeraPro',serif;
 	padding:10px;
 }
 .title-box{
@@ -209,7 +239,7 @@ transform: translateX(-50%);
 	margin-top:10px;
 	/*text-align: center;*/
 	font-weight: 400;
-	font-family:'Roboto Slab',serif !important;
+	font-family:'CeraPro',serif !important;
 	font-size:2.3em;
 	letter-spacing: 2px;
 	

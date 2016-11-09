@@ -1542,7 +1542,7 @@ var zoomHeight = (windowH-scaler*windowH)/2
    .append("svg")
    .attr("class","thesvg")
    .attr("width", 2000)
-   .attr("height", windowH-100)
+   .attr("height", windowH-150)
 
     .call(d3.behavior.zoom().on("zoom", function () {
     svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
