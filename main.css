@@ -94,6 +94,18 @@ transform: translateX(-50%);
 
 }
 
+.example-name-circle{
+	display:flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+	overflow:hidden;
+	color:white;
+	font-family: 'Roboto Slab', serif;
+	font-size: 4px;
+	hyphens: auto;
+	text-align:center;
+}
+
 .main-text-box{
 	display:flex;
     align-items: center; /* Vertical center alignment */

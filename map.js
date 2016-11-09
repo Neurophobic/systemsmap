@@ -1569,11 +1569,7 @@ var timeline = svg.append("line")
                          .attr('fill', 'grey')
             .attr('stroke','grey');
 
-            var practical = svg.append("text")
-              .text("Practical Preventive")
-              .attr("class", "timeline")
-              .attr("x", 0-((mapW/6)) + ((mapW/6)*2))
-            .attr("y", windowH+500);
+           
 
             var identified = svg.append("text")
               .text("Identified Vulnerabilities")
@@ -1581,28 +1577,34 @@ var timeline = svg.append("line")
               .attr("x", 0-(mapW/6))
             .attr("y", windowH+500);
 
+             var practical = svg.append("text")
+              .text("Practical Preventive")
+              .attr("class", "timeline")
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*1))
+            .attr("y", windowH+500);
+
             var connected = svg.append("text")
               .text("Connected Communities")
               .attr("class", "timeline")
-              .attr("x", 0-((mapW/6)) + ((mapW/6)*3))
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*2))
             .attr("y", windowH+500);
 
              var early = svg.append("text")
               .text("Early Warning Systems")
               .attr('class', 'timeline')
-              .attr("x", 0-((mapW/6)) + ((mapW/6)*4))
-            .attr("y", windowH+300);
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*3))
+            .attr("y", windowH+500);
 
             var emergency = svg.append("text")
               .text("Emergency Response Plan")
               .attr('class', 'timeline')
-              .attr("x", 0-((mapW/6)) + ((mapW/6)*5))
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*4))
             .attr("y", windowH+500);
 
             var rebuild = svg.append("text")
               .text("Rebuild & Recover")
               .attr('class', 'timeline')
-              .attr("x", 0-((mapW/6)) + ((mapW/6)*6))
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*5))
             .attr("y", windowH+500);
 
 
@@ -1797,14 +1799,26 @@ var howmightwe = insightNodes.append('foreignObject')
 }) 
 .on("mouseout", function(d) {
   d3.select(this).attr("r", 15).style("fill", "black");
-}) 
-  ;
+});
 
-  exampleNodes.append("text")
-    .text(function(d){
-      return d.name;
-    })
-    .style("font-size","5px");
+
+exampleNodes.append('foreignObject')
+                    .attr('x', -10.5)
+                    .attr('y', -10.5)
+                    .attr('width', 21)
+                    .attr('height', 21)
+                    .append("xhtml:body")
+
+                    .html(function(d){
+                      var thing = '<div class="example-name-circle" style="width: 21px; height:21px;">'+d.name+'</div>'
+                      return thing;
+                    });
+
+  // exampleNodes.append("text")
+  //   .text(function(d){
+  //     return d.name;
+  //   })
+  //   .style("font-size","5px");
 
 
 
