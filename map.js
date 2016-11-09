@@ -134,6 +134,7 @@ var data = {
      source:13,
      target:12,
      force:true,
+     resolved:"Fine tuning of an efficient PVA service coupled with attractive incentives for community wide buy in. e.g. A PVA recommended dam structure being built reduces insurance premiums for everyone in the area by 20% (either public funded/ community lobbied).",
      need:"Good PVA studies lead to actionable outcomes that communities can get behind (fostering the need for DRR to be a larger part of the public's conscious.",
      insight: "Is there an 'Opt – In' community vulnerability analysis; which would allow for a tailored and inclusive exploration of overall vulnerability (not only to assets), and level of resilience as a consequence?",
      desc:" For determining the current vulnerability of your location PVA’s are held in quite high regard. Suncorp could have a PVA team that negotiates insurance premiums based on evidence. Also outcomes of this study could create community funded ecosystem improvement operations to foster local area resilience and reduce insurance premiums."
@@ -360,6 +361,7 @@ var data = {
    {
      name: "Terrapattern",
      type: "example",
+     link:"terrapattern",
      sub:"Mapping and Machine Vision",
      source:35,
      target:34,
@@ -516,6 +518,7 @@ var data = {
    {
      name: "BLiF",
      sub:"Blickpunkt Fernerkundung, Point of View Remote Sensing",
+     link:"blif",
      type: "example",
      source:50,
      target:49,
@@ -1802,31 +1805,31 @@ var timeline = svg.append("line")
              var practical = svg.append("text")
               .text("Practical Preventive")
               .attr("class", "timeline")
-              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*1))
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*1) + ((mapW+(mapW/6))/6)/2)
             .attr("y", windowH+500);
 
             var connected = svg.append("text")
               .text("Connected Communities")
               .attr("class", "timeline")
-              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*2))
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*2) + ((mapW+(mapW/6))/6)/2)
             .attr("y", windowH+500);
 
              var early = svg.append("text")
               .text("Early Warning Systems")
               .attr('class', 'timeline')
-              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*3))
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*3) + ((mapW+(mapW/6))/6)/2)
             .attr("y", windowH+500);
 
             var emergency = svg.append("text")
               .text("Emergency Response Plan")
               .attr('class', 'timeline')
-              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*4))
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*4) + ((mapW+(mapW/6))/6)/2)
             .attr("y", windowH+500);
 
             var rebuild = svg.append("text")
               .text("Rebuild & Recover")
               .attr('class', 'timeline')
-              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*5))
+              .attr("x", (0-(mapW/6)) + (((mapW+(mapW/6))/6)*5) + ((mapW+(mapW/6))/6)/2)
             .attr("y", windowH+500);
 
 
@@ -2162,7 +2165,7 @@ exampleNodes.append('foreignObject')
 $( document ).ready(function() {
   for(var i = 0; i< data.nodes.length; i++){
     if(data.nodes[i].type == "example"){
-      $("#foo").append("<div class='pure-g example-box'><div class='pure-u-1-2 example-card'><a id='"+data.nodes[i].link+"' name='"+data.nodes[i].link+"'><h1>"+data.nodes[i].name+"</h1></a><h2>"+data.nodes[i].sub+"</h2><p>"+data.nodes[i].desc+"<p><div class='pure-g'><div class='pure-u-1-3 '><div class='insight-cat'><h4>Need being answered:</h4> "+data.nodes[i].need+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>Insight:</h4>"+data.nodes[i].insight+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>How Resolved:</h4>  "+data.nodes[i].resolved+"</div></div></div></div></div>");
+      $("#foo").append("<div class='pure-g example-box'><div class='pure-u-1-2 example-card'><div class='pure-u-1-1'><a id='"+data.nodes[i].link+"' name='"+data.nodes[i].link+"'><img class='pure-img' src='img/"+data.nodes[i].link+".png'/></a></div><h1>"+data.nodes[i].name+"</h1><h2>"+data.nodes[i].sub+"</h2><p>"+data.nodes[i].desc+"<p><div class='pure-g'><div class='pure-u-1-3 '><div class='insight-cat'><h4>Need being answered:</h4> "+data.nodes[i].need+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>Insight:</h4>"+data.nodes[i].insight+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>How Resolved:</h4>  "+data.nodes[i].resolved+"</div></div></div></div></div>");
     }
     
   }

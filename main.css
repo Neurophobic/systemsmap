@@ -197,6 +197,7 @@ transform: translateX(-50%);
 	
 }
 .example-card{
+	margin-top:25px;
 	border-bottom:1px solid grey;
 	padding-bottom:25px;
 	margin-bottom:20px;
