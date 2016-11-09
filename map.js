@@ -1913,6 +1913,7 @@ exampleNodes.append('foreignObject')
                       })
                     .attr('width', 90)
                     .attr('height', 90)
+                    .attr("class", "overflow-visible")
                     .append("xhtml")
                     .html(function(d){
                       var thing = '<div class="main-text-box" style="width: 90px; height:90px;"><h2>'+d.title+'</h2></div>';

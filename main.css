@@ -215,3 +215,7 @@ transform: translateX(-50%);
 	
 }
 
+.overflow-visible{
+	overflow:visible !important;
+}
+
