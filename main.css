@@ -1,7 +1,10 @@
 #map{overflow:hidden;
 
 }
-
+.timeline{
+	font-family: 'Roboto Slab', serif;
+	color:grey;
+}
 .thesvg{
 position: relative;
 left: 50%;

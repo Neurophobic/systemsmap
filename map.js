@@ -1563,41 +1563,47 @@ console.log("updating");
 
 var timeline = svg.append("line")
                         .attr("x1",0-(mapW/6))
-                          .attr("y1", windowH+300)
+                          .attr("y1", windowH+500)
                         .attr("x2", mapW+(mapW/6))
-                         .attr("y2", windowH+300)
-                         .attr('fill', '#101717')
-            .attr('stroke','#101717');
+                         .attr("y2", windowH+500)
+                         .attr('fill', 'grey')
+            .attr('stroke','grey');
 
             var practical = svg.append("text")
               .text("Practical Preventive")
+              .attr("class", "timeline")
               .attr("x", 0-((mapW/6)) + ((mapW/6)*2))
-            .attr("y", windowH+300);
+            .attr("y", windowH+500);
 
             var identified = svg.append("text")
               .text("Identified Vulnerabilities")
+              .attr("class", "timeline")
               .attr("x", 0-(mapW/6))
-            .attr("y", windowH+300);
+            .attr("y", windowH+500);
 
             var connected = svg.append("text")
               .text("Connected Communities")
+              .attr("class", "timeline")
               .attr("x", 0-((mapW/6)) + ((mapW/6)*3))
-            .attr("y", windowH+300);
+            .attr("y", windowH+500);
 
              var early = svg.append("text")
               .text("Early Warning Systems")
+              .attr('class', 'timeline')
               .attr("x", 0-((mapW/6)) + ((mapW/6)*4))
             .attr("y", windowH+300);
 
             var emergency = svg.append("text")
               .text("Emergency Response Plan")
+              .attr('class', 'timeline')
               .attr("x", 0-((mapW/6)) + ((mapW/6)*5))
-            .attr("y", windowH+300);
+            .attr("y", windowH+500);
 
             var rebuild = svg.append("text")
               .text("Rebuild & Recover")
+              .attr('class', 'timeline')
               .attr("x", 0-((mapW/6)) + ((mapW/6)*6))
-            .attr("y", windowH+300);
+            .attr("y", windowH+500);
 
 
 
@@ -1614,8 +1620,8 @@ var timeline = svg.append("line")
                'xoverflow':'visible'})
         .append('svg:path')
             .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
-            .attr('fill', '#101717')
-            .attr('stroke','#101717');
+            .attr('fill', 'grey')
+            .attr('stroke','grey');
 
 
  var drag = d3.behavior.drag()
@@ -1651,8 +1657,8 @@ var timeline = svg.append("line")
      d3.select(this).attr("y2", targetNode.y);
      return targetNode.x
    })
-   .attr("stroke-width", 1)
-            .attr("stroke", "black")
+   .attr("stroke-width", 2)
+            .attr("stroke", "grey")
             .attr('marker-end','url(#arrowhead)');
 
   
