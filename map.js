@@ -1728,6 +1728,7 @@ var insightNodes = svg.selectAll("insightNodes")
                     .attr('y', -40)
                     .attr('width', 50)
                     .attr('height', 50)
+                    .attr("class", "overflow-visible")
                     .append("xhtml:body")
 
                     .html(function(d){
@@ -1928,6 +1929,7 @@ exampleNodes.append('foreignObject')
                        return d.y -10;
                       })
                     .attr('width', 90)
+                    .attr("class", "overflow-visible")
                     .attr('height', 40)
                     .append("xhtml")
                     .html(function(d){
