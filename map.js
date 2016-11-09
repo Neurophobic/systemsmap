@@ -272,7 +272,7 @@ var data = {
      desc:"Are current data gathering methods properly understood, to in turn improve and utilise them in the best possible way?"
    },
    {
-     name: "European handbook of crowdsourcing",
+     name: "EU Handbook of Crowdsourcing",
      sub:"Open Source",
      link:"handbook",
      type: "example",
@@ -882,6 +882,116 @@ var data = {
      force:true,
      desc:"create a platform that standardizes and coordinates, a common framework of methods addressing disaster response?"
    },
+    {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:85,
+     target:5,
+     force:true,
+     desc:"Can we connect streams of data with reliable system architecture and human decision making?"
+   },
+    {
+     name: "Riser",
+     sub:"Resilient Information Systems for Emergency Response",
+     link:"riser",
+     type: "example",
+     source:86,
+     target:85,
+     force:true,
+     need:"Information systems specifically for resilience.",
+     resolved:"Research programs for developing resilience techonolgy.",
+     insight:"Can we connect streams of data with reliable system architecture and human decision making?",
+     desc:"RISER is developing new technologies and information systems capable of capturing, collating, and communicating timely and relevant information, even in the extreme and unexpected circumstances surrounding an emergency."
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:87,
+     target:0,
+     force:true,
+     desc:"Can we collate all relevant scattered information and insure that its relevance and destination are the best they can be?"
+   },
+    {
+     name: "ADMP",
+     sub:"Australia Disaster Management Platform",
+     link:"ADMP",
+     type: "example",
+     source:88,
+     target:87,
+     force:true,
+     need:"Inform decision making by communicating appropriate information through various channels to the right people.",
+     resolved:"Developed an open-standards platform.",
+     insight:"Can we collate all relevant scattered information and insure that its relevance and destination are the best they can be?",
+     desc:"Open-standards based IT platform to respond to natural and manmade disasters on property and infrastructure. Enable real time situational awareness, translating into simulations and optimization models."
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:89,
+     target:6,
+     force:true,
+     desc:"Can we improve decision making by providing interactive and dynamic technology?"
+   },
+    {
+     name: "Cruiser",
+     sub:"Cruiser Interactive",
+     link:"cruiser",
+     type: "example",
+     source:90,
+     target:89,
+     force:true,
+     need:"To provide environment for facilitated decision making.",
+     resolved:" Coordination and constant feedback loop in interactive setting.",
+     insight:"Can we improve decision making by providing interactive and dynamic technology?",
+     desc:"The Cruiser team consists of new-world thinkers in collaborative technology, pioneering the future of human-computer interaction. Cruiser’s cutting edge technology is supported by the team’s expert knowledge of multi-user, multi-device collaboration, content management and user modelling for greater personalisation of collaboration services. "
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:91,
+     target:4,
+     force:true,
+     desc:"Can we address current stakeholder needs in disaster awareness and monitoring?"
+   },
+    {
+     name: "Sentinel Hotspots",
+     sub:"Australian Government - Geoscience Australia",
+     link:"sentinelhotspot",
+     type: "example",
+     source:92,
+     target:91,
+     force:true,
+     need:"To provide national view of hotspots for information needs.",
+     resolved:"Web platform for digital mapping of hotspots.",
+     insight:"Can we address current stakeholder needs in disaster awareness and monitoring?",
+     desc:"The Cruiser team consists of new-world thinkers in collaborative technology, pioneering the future of human-computer interaction. Cruiser’s cutting edge technology is supported by the team’s expert knowledge of multi-user, multi-device collaboration, content management and user modelling for greater personalisation of collaboration services. "
+   },
+    {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:93,
+     target:4,
+     force:true,
+     desc:"Can we make governmental and local authority geospatial data open to the public?"
+   },
+    {
+     name: "National Map",
+     sub:"Australian Government",
+     link:"nationalmap",
+     type: "example",
+     source:94,
+     target:93,
+     force:true,
+     need:"Provide easy access to authoritative and other spatial data to government, business and the public.",
+     resolved:"Web platform for navigating geospatial data from federal, state and local governments.",
+     insight:"Can we make governmental and local authority geospatial data open to the public?",
+     desc:"The NationalMap is a website for map-based access to spatial data from Australian government agencies. It is an initiative of the Department of Communications and the Arts now currently managed by the Department of the Prime Minister and Cabinet and the software has been developed by Data61 working closely with the Department of Communications and the Arts, Geoscience Australia and other government agencies."
+   },
  
   
   
@@ -1085,8 +1195,8 @@ var data = {
    },
    {
      name: "Crowd4Sat",
-     type: "example",
-     source:28,
+     type: "nope",
+     source:26,
      target:26,
      force:true,
      desc:""
@@ -1516,6 +1626,118 @@ var data = {
      force:true,
      desc:"A platform allowing for the standardization, coordination, and creation of a common framework of methods addressing disaster response."
    },
+   {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:85,
+     target:5,
+     force:true,
+     desc:"Can we connect streams of data with reliable system architecture and human decision making?"
+   },
+   {
+     name: "Riser",
+     sub:"Resilient Information Systems for Emergency Response",
+     link:"riser",
+     type: "example",
+     source:86,
+     target:85,
+     force:true,
+     need:"Information systems specifically for resilience.",
+     resolved:"Research programs for developing resilience techonolgy.",
+     insight:"Can we connect streams of data with reliable system architecture and human decision making?",
+     desc:"RISER is developing new technologies and information systems capable of capturing, collating, and communicating timely and relevant information, even in the extreme and unexpected circumstances surrounding an emergency."
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:87,
+     target:0,
+     force:true,
+     desc:"Can we collate all relevant scattered information and insure that its relevance and destination are the best they can be?"
+   },
+   {
+     name: "ADMP",
+     sub:"Australia Disaster Management Platform",
+     link:"ADMP",
+     type: "example",
+     source:88,
+     target:87,
+     force:true,
+     need:"Inform decision making by communicating appropriate information through various channels to the right people.",
+     resolved:"Developed an open-standards platform.",
+     insight:"Can we collate all relevant scattered information and insure that its relevance and destination are the best they can be?",
+     desc:"Open-standards based IT platform to respond to natural and manmade disasters on property and infrastructure. Enable real time situational awareness, translating into simulations and optimization models."
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:89,
+     target:6,
+     force:true,
+     desc:"Can we improve decision making by providing interactive and dynamic technology?"
+   },
+    {
+     name: "Cruiser",
+     sub:"Cruiser Interactive",
+     link:"cruiser",
+     type: "example",
+     source:90,
+     target:89,
+     force:true,
+     need:"To provide environment for facilitated decision making.",
+     resolved:" Coordination and constant feedback loop in interactive setting.",
+     insight:"Can we improve decision making by providing interactive and dynamic technology?",
+     desc:"The Cruiser team consists of new-world thinkers in collaborative technology, pioneering the future of human-computer interaction. Cruiser’s cutting edge technology is supported by the team’s expert knowledge of multi-user, multi-device collaboration, content management and user modelling for greater personalisation of collaboration services. "
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:91,
+     target:4,
+     force:true,
+     desc:"Can we address current stakeholder needs in disaster awareness and monitoring?"
+   },
+   {
+     name: "Sentinel Hotspots",
+     sub:"Australian Government - Geoscience Australia",
+     link:"sentinelhotspot",
+     type: "example",
+     source:92,
+     target:91,
+     force:true,
+     need:"To provide national view of hotspots for information needs.",
+     resolved:"Web platform for digital mapping of hotspots.",
+     insight:"Can we address current stakeholder needs in disaster awareness and monitoring?",
+     desc:"The Cruiser team consists of new-world thinkers in collaborative technology, pioneering the future of human-computer interaction. Cruiser’s cutting edge technology is supported by the team’s expert knowledge of multi-user, multi-device collaboration, content management and user modelling for greater personalisation of collaboration services. "
+   },
+   {
+     name: "Insight",
+     type: "insight",
+     howmight:false,
+     source:93,
+     target:4,
+     force:true,
+     desc:"Can we make governmental and local authority geospatial data open to the public?"
+   },
+    {
+     name: "National Map",
+     sub:"Australian Government",
+     link:"nationalmap",
+     type: "example",
+     source:94,
+     target:93,
+     force:true,
+     need:"Provide easy access to authoritative and other spatial data to government, business and the public.",
+     resolved:"Web platform for navigating geospatial data from federal, state and local governments.",
+     insight:"Can we make governmental and local authority geospatial data open to the public?",
+     desc:"The NationalMap is a website for map-based access to spatial data from Australian government agencies. It is an initiative of the Department of Communications and the Arts now currently managed by the Department of the Prime Minister and Cabinet and the software has been developed by Data61 working closely with the Department of Communications and the Arts, Geoscience Australia and other government agencies."
+   },
+
+
    ],
    insightNodes:[
  
