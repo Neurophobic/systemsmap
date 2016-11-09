@@ -1937,7 +1937,7 @@ exampleNodes.append('foreignObject')
 $( document ).ready(function() {
   for(var i = 0; i< data.nodes.length; i++){
     if(data.nodes[i].type == "example"){
-      $("#foo").append("<div class='pure-g'><div class='pure-u-1-3 '></div><div class='pure-u-1-3 example-card'><a id='"+data.nodes[i].link+"' name='"+data.nodes[i].link+"'><h1>"+data.nodes[i].name+"</h1></a><h2>"+data.nodes[i].sub+"</h2><p>"+data.nodes[i].desc+"<p><div class='pure-g'><div class='pure-u-1-3 '><div class='insight-cat'><h4>Need being answered:</h4> "+data.nodes[i].need+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>Insight:</h4>"+data.nodes[i].insight+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>How Resolved:</h4>  "+data.nodes[i].resolved+"</div></div></div></div></div>");
+      $("#foo").append("<div class='pure-g example-box'><div class='pure-u-1-2 example-card'><a id='"+data.nodes[i].link+"' name='"+data.nodes[i].link+"'><h1>"+data.nodes[i].name+"</h1></a><h2>"+data.nodes[i].sub+"</h2><p>"+data.nodes[i].desc+"<p><div class='pure-g'><div class='pure-u-1-3 '><div class='insight-cat'><h4>Need being answered:</h4> "+data.nodes[i].need+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>Insight:</h4>"+data.nodes[i].insight+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>How Resolved:</h4>  "+data.nodes[i].resolved+"</div></div></div></div></div>");
     }
     
   }
