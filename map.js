@@ -87,6 +87,7 @@ var data = {
    {
      name: "Amicus",
      sub:"CSIRO - Data61",
+     url:"https://research.csiro.au/data61/amicus/",
      type: "example",
      source:9,
      target:8,
@@ -94,7 +95,7 @@ var data = {
      link:"amicus",
      need:"To be able to predict fire behaviour",
      insight:"Can predictive software help manage disaster scenarios better?",
-     resolved:"utilised previous knowledge of bush fire behaviour and created calculation to predict movement of future ones",
+     resolved:"Utilised previous knowledge of bush fire behaviour and created calculation to predict movement of future ones",
      desc:"Multi-platfrom application that enables the easy calculation of expected fire behaviour from burning conditions that you enter. It synthesises our current knowledge for predicting the behaviour and spread of bushfires in a range of vegetation types as well as providing simple calculations of expected fire danger."
    },
    {
@@ -108,6 +109,7 @@ var data = {
    {
      name: "BlightSTAT",
      type: "example",
+     url:"http://blightstatus.nola.gov/",
      sub: "New Orleans",
      link:"blightstat",
      source:11,
@@ -115,7 +117,7 @@ var data = {
      force:true,
      need:"lack of efficiency with reconstruction efforts in new orleans post disaster",
      insight:"Is there a community centred approach to logging, reporting, and measuring declining/damaged buildings, or the general “health state” of a community?",
-     resolved:"created platform of machine learning and human input for decision making on demolishing houses",
+     resolved:"Created platform of machine learning and human input for decision making on demolishing houses",
      desc:"New Orleans BlighSTAT – there is a scorecard (algorithm based) helping you decide whether a property should be demolished or not (supervisor checks it) – relatable to how at risk a property is. Done with the help of ENIGMA – data science start up "
    },
    {
@@ -129,6 +131,7 @@ var data = {
    {
      name: "PVA",
      sub:"Participatory Vulnerabilities Analysis",
+     url:"http://policy-practice.oxfam.org.uk/publications/participatory-capacity-and-vulnerability-analysis-a-practitioners-guide-232411",
      type: "example",
      link:"pva",
      source:13,
@@ -150,6 +153,7 @@ var data = {
    {
      name: "NSW Rural Fire Service",
      type: "example",
+     url:"http://www.rfs.nsw.gov.au/",
      sub:"Australias regional bush fire management",
      link:"nsw",
      source:15,
@@ -171,6 +175,7 @@ var data = {
    {
      name: "SES",
      type: "example",
+     url:"http://www.ses.sa.gov.au/",
      sub:"State Emergency Sevice",
      link:"ses",
      source:17,
@@ -191,7 +196,8 @@ var data = {
    },
    {
      name: "IAG Floods",
-     sub:"Italy",
+     url:"http://reliefweb.int/sites/reliefweb.int/files/resources/28-07-2016-sitrep-1-floods-in-india.pdf",
+     sub:"India",
      link:"iag",
      type: "example",
      source:19,
@@ -216,12 +222,13 @@ var data = {
      type: "example",
      sub:"Reinsurance",
      link:"swissre",
+     url:"http://www.swissre.com/clients/client_tools/about_catnet.html",
      source:21,
      target:20,
      force:true,
      need:"Insurance companies lose lots of money when disaster strikes",
      insight:"Open up existing “Catastrophe Network” services that measure risk exposure, assessment and resilience to the general public?",
-     resolved:"created a network that includes the usage of satellite imagery, GIS and country/location specific risk info for insurance companies",
+     resolved:"Created a network that includes the usage of satellite imagery, GIS and country/location specific risk info for insurance companies",
      desc:"Swiss Re (Reinsurance company) has developed a service, Catastrophe Network (CatNet) (with the partnership of ESRI - global mapping company -), that disseminates information to insurers such as risk rates on 500,000 locations, so users can more intelligently evaluate risks."
    },
    {
@@ -234,7 +241,8 @@ var data = {
    },
    {
      name: "CEOS DRM",
-     sub:"Disaster Risk Management",
+     sub:"WGDisasters",
+     url:"http://ceos.org/ourwork/workinggroups/disasters/",
      link:"ceos",
      type: "example",
      source:23,
@@ -274,7 +282,8 @@ var data = {
    },
    {
      name: "EU Handbook of Crowdsourcing",
-     sub:"Open Source",
+     sub:"Energic",
+     link:"http://vgibox.eu/resources/books/",
      link:"handbook",
      type: "example",
      source:27,
@@ -306,6 +315,7 @@ var data = {
    {
      name: "Digital Globe",
      sub:"High-res Satellite Imagery GBDX Platform",
+     url:"https://developer.digitalglobe.com/gbdx/",
      link:"dg",
      type: "example",
      source:30,
@@ -328,6 +338,7 @@ var data = {
      name: "UCL (IRDR)",
      type: "example",
      sub:"Institute for risk & disaster reduction",
+     url:"https://www.ucl.ac.uk/rdr",
      link:"ucl",
      source:32,
      target:31,
@@ -341,6 +352,7 @@ var data = {
      name: "NERC",
      sub:"UK",
      link:"nerc",
+     url:"http://www.nerc.ac.uk/",
      type: "example",
      source:33,
      target:31,
@@ -362,6 +374,7 @@ var data = {
      name: "Terrapattern",
      type: "example",
      link:"terrapattern",
+     url:"http://www.terrapattern.com/",
      sub:"Mapping and Machine Vision",
      source:35,
      target:34,
@@ -392,6 +405,7 @@ var data = {
      name: "Starlab iArbol",
      sub:"Urban Forest Management in Barcelona",
      link:"starlab",
+     url:"http://iarbol.starlab.es/",
      type: "example",
      source:38,
      target:37,
@@ -413,6 +427,7 @@ var data = {
      name: "GeoDesign",
      sub:"Science & Design",
      link:"geodesign",
+     url:"http://www.esri.com/products/arcgis-capabilities/geodesign",
      type: "example",
      source:40,
      target:39,
@@ -433,6 +448,7 @@ var data = {
    {
      name: "Data Cube",
      sub:"Australian Geoscience",
+     url:"http://www.datacube.org.au/",
      link:"datacube",
      type: "example",
      source:42,
@@ -454,6 +470,7 @@ var data = {
    {
      name: "MapBox",
      sub:"Utilizing satellites and drones",
+     url:"https://www.mapbox.com/",
      link:"mapbox",
      type: "example",
      source:44,
@@ -476,6 +493,7 @@ var data = {
    {
      name: "GFDRR",
      sub:"World Bank & Global Fac. For Disaster Reduction",
+     url:"https://www.gfdrr.org/",
      link:"gfdrr",
      type: "example",
      source:46,
@@ -497,6 +515,7 @@ var data = {
    {
      name: "Web-GIS Flash Flood",
      type: "example",
+     url:"http://blog.nssl.noaa.gov/flash/database/",
      sub:"Italy",
      link:"flashflood",
      source:48,
@@ -517,6 +536,7 @@ var data = {
    },
    {
      name: "BLiF",
+     url:"http://blif.rgeo.de/cms/start/",
      sub:"Blickpunkt Fernerkundung, Point of View Remote Sensing",
      link:"blif",
      type: "example",
@@ -546,6 +566,7 @@ var data = {
    },
    {
      name: "Data61",
+     url:"https://www.data61.csiro.au/",
      sub:"CSIRO",
      link:"data61csiro",
      type: "example",
@@ -568,6 +589,7 @@ var data = {
    {
      name: "University of Portsmouth",
      sub:"Disaster risk reduction research group",
+     url:"http://www.port.ac.uk/courses/geography-earth-and-environmental-sciences/msc-crisis-and-disaster-management/",
      link:"uop",
      type: "example",
      source:55,
@@ -589,6 +611,7 @@ var data = {
    {
      name: "Spark",
      sub:"CSIRO Data61",
+     url:"https://www.data61.csiro.au/Our-expertise/Expertise-Decision-sciences/Spark",
      link:"spark",
      type: "example",
      source:57,
@@ -610,6 +633,7 @@ var data = {
    {
      name: "Melodies",
      sub:"Exploiting Open Data",
+     url:"http://www.melodiesproject.eu/",
      link:"melodies",
      type: "example",
      source:59,
@@ -631,6 +655,7 @@ var data = {
    {
      name: "Humanitarian OpenStreetMap",
      sub:"HOTOSM",
+     url:"https://hotosm.org",
      link:"HOTOSM",
      type: "example",
      source:61,
@@ -652,6 +677,7 @@ var data = {
    {
      name: "MicroMappers",
      sub:"Tweet mining disaster response",
+     url:"https://micromappers.wordpress.com/",
      link:"micromappers",
      type: "example",
      source:63,
@@ -676,6 +702,7 @@ var data = {
      name: "Energic",
      type: "example",
      sub:"European Network Exploring Research into Geospatial Information Crowdsourcing",
+     url:"http://vgibox.eu/",
      link:"energic",
      source:65,
      target:64,
@@ -698,6 +725,7 @@ var data = {
      sub:"",
      link:"healapp",
      type: "example",
+     url:"https://heal.com/",
      source:67,
      target:66,
      force:true,
@@ -717,6 +745,7 @@ var data = {
    {
      name: "Lux",
      sub:"ICG Solutions",
+     url:"http://www.icgsolutions.com/",
      link:"lux",
      type: "example",
      source:69,
@@ -738,6 +767,7 @@ var data = {
    {
      name: "AIDR",
      sub:"AI for disaster response",
+     url:"http://aidr.qcri.org/",
      link:"aidr",
      type: "example",
      source:71,
@@ -759,6 +789,7 @@ var data = {
    {
      name: "HawkEye360",
      sub:"LEO Constellation",
+     url:"http://www.he360.com/",
      link:"hawkeye",
      type: "example",
      source:73,
@@ -780,6 +811,7 @@ var data = {
    {
      name: "One Concern",
      sub:"Emergency Management using AI",
+     url:"http://www.oneconcern.com/",
      link:"oneconcern",
      type: "example",
      source:75,
@@ -801,6 +833,7 @@ var data = {
    {
      name: "EWN",
      sub:"Early Warning Network Australia",
+     url:"http://www.ewn.com.au/",
      link:"EWN",
      type: "example",
      source:77,
@@ -825,6 +858,7 @@ var data = {
      name: "Digital Globe",
      type: "example",
      sub:"High-res Satellite Imagery GBDX Platform",
+     url:"https://developer.digitalglobe.com/gbdx/",
      link:"dg1",
      source:79,
      target:78,
@@ -845,6 +879,7 @@ var data = {
    {
      name: "Earth-i",
      sub:"High-res Satellite Imagery GBDX Platform",
+     url:"http://earthi.space/",
      link:"earthi",
      type: "example",
      source:81,
@@ -866,6 +901,7 @@ var data = {
    {
      name: "BlackSky",
      sub:"AlertWhere",
+     url:"https://www.blacksky.com/",
      link:"blacksky",
      type: "example",
      source:83,
@@ -897,6 +933,7 @@ var data = {
     {
      name: "Riser",
      sub:"Resilient Information Systems for Emergency Response",
+     url:"http://riser.net.au/",
      link:"riser",
      type: "example",
      source:86,
@@ -920,6 +957,7 @@ var data = {
      name: "ADMP",
      sub:"Australia Disaster Management Platform",
      link:"ADMP",
+     url:"http://admp.org.au/",
      type: "example",
      source:88,
      target:87,
@@ -942,6 +980,7 @@ var data = {
      name: "Cruiser",
      sub:"Cruiser Interactive",
      link:"cruiser",
+     url:"http://www.cruiserinteractive.com.au/",
      type: "example",
      source:90,
      target:89,
@@ -963,6 +1002,7 @@ var data = {
     {
      name: "Sentinel Hotspots",
      sub:"Australian Government - Geoscience Australia",
+     url:"https://sentinel.ga.gov.au/#/",
      link:"sentinelhotspot",
      type: "example",
      source:92,
@@ -986,6 +1026,7 @@ var data = {
      name: "National Map",
      sub:"Australian Government",
      link:"nationalmap",
+     url:"http://nationalmap.gov.au/",
      type: "example",
      source:94,
      target:93,
@@ -2165,7 +2206,7 @@ exampleNodes.append('foreignObject')
 $( document ).ready(function() {
   for(var i = 0; i< data.nodes.length; i++){
     if(data.nodes[i].type == "example"){
-      $("#foo").append("<div class='pure-g example-box'><div class='pure-u-1-2 example-card'><div class='pure-u-1-1'><a id='"+data.nodes[i].link+"' name='"+data.nodes[i].link+"'><img class='pure-img' src='img/"+data.nodes[i].link+".png'/></a></div><h1>"+data.nodes[i].name+"</h1><h2>"+data.nodes[i].sub+"</h2><p>"+data.nodes[i].desc+"<p><div class='pure-g'><div class='pure-u-1-3 '><div class='insight-cat'><h4>Need being answered:</h4> "+data.nodes[i].need+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>Insight:</h4>"+data.nodes[i].insight+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>How Resolved:</h4>  "+data.nodes[i].resolved+"</div></div></div></div></div>");
+      $("#foo").append("<div class='pure-g example-box'><div class='pure-u-1-2 example-card'><div class='pure-u-1-1'><a id='"+data.nodes[i].link+"' name='"+data.nodes[i].link+"'></a><a href='"+data.nodes[i].url+"' ><img class='pure-img' src='img/"+data.nodes[i].link+".png'/></a></div><h1>"+data.nodes[i].name+"</h1><h2>"+data.nodes[i].sub+"</h2><p>"+data.nodes[i].desc+"<p><div class='pure-g'><div class='pure-u-1-3 '><div class='insight-cat'><h4>Need being answered:</h4> "+data.nodes[i].need+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>Insight:</h4>"+data.nodes[i].insight+"</div></div> <div class='pure-u-1-3'><div class='insight-cat'><h4>How Resolved:</h4>  "+data.nodes[i].resolved+"</div></div></div></div></div>");
     }
     
   }
