@@ -7,6 +7,7 @@ var data = {
    {
      name: "Mission Control",
      title:"Mission Control",
+     class:"mc",
      subtitle:"",
      x: (mapW)/2,
      y: 20,
@@ -16,6 +17,7 @@ var data = {
    {
      name: "Prediction",
      title: "Prediction",
+     class:"pr",
      subtitle:"",
      x: (mapW)/6 - (((mapW)/6)),
      y: 400,
@@ -25,6 +27,7 @@ var data = {
    {
      name: "Auditing",
      title:"Auditing",
+     class:"au",
      subtitle:"",
      x: (mapW)/6 - (((mapW)/6)),
      y: 900,
@@ -34,6 +37,7 @@ var data = {
    {
      name: "Learning",
      title: "Learning",
+     class:"le",
      subtitle:"",
      x: ((mapW)/6)*3 - (((mapW)/6)/2),
      y: 400,
@@ -42,6 +46,7 @@ var data = {
    },
    {
      name: "Mapping",
+     class:"ma",
      title: "Mapping",
      subtitle:"Citizen Mapping",
      x: ((mapW)/6)*3 - (((mapW)/6)/2),
@@ -52,6 +57,7 @@ var data = {
    {
      name: "Planning",
      title: "Planning",
+     class:"pl",
      subtitle:"Citizen Planning",
      x: ((mapW)/6)*4 + (((mapW)/6)/2),
      y: 700,
@@ -61,6 +67,7 @@ var data = {
    {
      name: "Design for Fog",
      title: "Situational Awareness",
+     class:"sa",
      subtitle:"Human Factors",
      x: ((mapW)/6)*5 + (((mapW)/6)/2),
      y: 700,
@@ -70,6 +77,7 @@ var data = {
    {
      name: "Aftermath",
      title:"Rebuild & Recover",
+     class:"af",
     subtitle:"",
      x: ((mapW)/6)*6 + (((mapW)/6)/2),
      y: 700,
@@ -549,6 +557,7 @@ var data = {
    {
      name: "Modelling",
      title: "Modelling",
+     class:"mo",
      subtitle:"",
      x: ((mapW)/6)*2 - (((mapW)/6)/2),
      y: 700,
@@ -956,7 +965,7 @@ var data = {
     {
      name: "ADMP",
      sub:"Australia Disaster Management Platform",
-     link:"ADMP",
+     link:"admp",
      url:"http://admp.org.au/",
      type: "example",
      source:88,
@@ -2136,6 +2145,118 @@ exampleNodes.append('foreignObject')
   }
 
 
+var saGradient = svg.append("defs")
+  .append("radialGradient")
+    .attr("id", "sa-gradient");
+
+saGradient.append("stop")
+    .attr("offset", "90%")
+    .attr("stop-color", "black");
+
+saGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#ee7f2a");
+
+var mcGradient = svg.append("defs")
+  .append("radialGradient")
+    .attr("id", "mc-gradient");
+
+mcGradient.append("stop")
+    .attr("offset", "90%")
+    .attr("stop-color", "black");
+
+mcGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#b0a496");
+
+
+var prGradient = svg.append("defs")
+  .append("radialGradient")
+    .attr("id", "pr-gradient");
+
+prGradient.append("stop")
+    .attr("offset", "90%")
+    .attr("stop-color", "black");
+
+prGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#68a1af");
+
+var leGradient = svg.append("defs")
+  .append("radialGradient")
+    .attr("id", "le-gradient");
+
+leGradient.append("stop")
+    .attr("offset", "90%")
+    .attr("stop-color", "black");
+
+leGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#4c879a");
+
+var moGradient = svg.append("defs")
+  .append("radialGradient")
+    .attr("id", "mo-gradient");
+
+moGradient.append("stop")
+    .attr("offset", "90%")
+    .attr("stop-color", "black");
+
+moGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#cac1c4");
+
+var auGradient = svg.append("defs")
+  .append("radialGradient")
+    .attr("id", "au-gradient");
+
+auGradient.append("stop")
+    .attr("offset", "90%")
+    .attr("stop-color", "black");
+
+auGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#838282");
+
+
+var maGradient = svg.append("defs")
+  .append("radialGradient")
+    .attr("id", "ma-gradient");
+
+maGradient.append("stop")
+    .attr("offset", "90%")
+    .attr("stop-color", "black");
+
+maGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#4c879a");
+
+
+var plGradient = svg.append("defs")
+  .append("radialGradient")
+    .attr("id", "pl-gradient");
+
+plGradient.append("stop")
+    .attr("offset", "90%")
+    .attr("stop-color", "black");
+
+plGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#71808a");
+
+var afGradient = svg.append("defs")
+  .append("radialGradient")
+    .attr("id", "af-gradient");
+
+afGradient.append("stop")
+    .attr("offset", "90%")
+    .attr("stop-color", "black");
+
+afGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "#a7bcc7");
+
+
 
  var mainNodes = svg.selectAll("mainNodes")
   .data(data.nodes.filter(function(d){
@@ -2155,7 +2276,46 @@ exampleNodes.append('foreignObject')
     .attr("cy", function(d){
       return d.y ;
     })
-    .attr("r", 77);
+    .attr("r", 77)
+   // .attr("stroke-width", 3)
+  // .attr("stroke", function(d){
+  //   if(d.class == "sa"){
+  //       return "rgba(0,0,0,0)";
+  //   } else if(d.class=="mc"){
+  //       return "#b0a496";
+  //   } else if(d.class=="pr"){
+  //       return "#68a1af";
+  //   } else if(d.class=="le" || d.class=="ma"){
+  //       return "#4c879a";
+  //   } else if(d.class=="mo"){
+  //       return "#cac1c4";
+  //   } else if(d.class=="au"){
+  //       return "#838282";
+  //   } else if(d.class == "pl"){
+  //       return "#71808a";
+  //   } else if(d.class=="af"){
+  //       return "#a7bcc7";
+  //   }
+  // })
+  .style("fill", function(d){
+    if(d.class == "sa"){
+        return "url(#sa-gradient)";
+    } else if(d.class=="mc"){
+        return "url(#mc-gradient)";
+    } else if(d.class=="pr"){
+        return "url(#pr-gradient)";
+    } else if(d.class=="le" || d.class=="ma"){
+        return "url(#ma-gradient)";
+    } else if(d.class=="mo"){
+        return "url(#mo-gradient)";
+    } else if(d.class=="au"){
+        return "url(#au-gradient)";
+    } else if(d.class == "pl"){
+        return "url(#pl-gradient)";
+    } else if(d.class=="af"){
+        return "url(#af-gradient)";
+    }
+  });
 
 // mainNodes.append("text")
 //     .attr({
@@ -2183,7 +2343,7 @@ exampleNodes.append('foreignObject')
                     .attr("class", "overflow-visible")
                     .append("xhtml")
                     .html(function(d){
-                      var thing = '<div class="main-text-box" style="width: 90px; height:90px;"><h2>'+d.title+'</h2></div>';
+                      var thing = '<div class="main-text-box '+d.class+'" style="width: 90px; height:90px;"><h2>'+d.title+'</h2></div>';
                       return thing;
                     });
 
@@ -2199,7 +2359,7 @@ exampleNodes.append('foreignObject')
                     .attr('height', 40)
                     .append("xhtml")
                     .html(function(d){
-                      var thing = '<div class="main-sub-box" style="width: 90px; height:90px;"><p>'+d.subtitle+'</p></div>';
+                      var thing = '<div class="main-sub-box '+d.class+'" style="width: 90px; height:90px;"><p>'+d.subtitle+'</p></div>';
                       return thing;
                     });                  
 
